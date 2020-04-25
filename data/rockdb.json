@@ -1,0 +1,36 @@
+{
+
+  "rocks": [
+    {
+      "Name": "Roviště",
+      "Coords": { "x": 14.255481515312198, "y": 49.661316656629054 },
+      "Page": "/pages/roviste.html",
+      "Pictures": [{}, {}, {}]
+    },
+    {
+      "Name": "Černá skála",
+      "Coords": { "x": 14.220446501159671, "y": 49.92066412591082 },
+      "Page": "/pages/cerna_skala.html",
+      "Pictures": [{}, {}, {}]
+    },
+    {
+      "Name": "Prokopské údolí",
+      "Coords": { "x": 14.355254326248172, "y": 50.038889822001586 },
+      "Page": "/pages/prokopske_udoli.html",
+      "Pictures": [{}, {}, {}]
+    },
+    {
+      "Name": "Tetín",
+      "Coords": { "x": 14.106828127288821, "y": 49.94888087606783 },
+      "Page": "/pages/tetin.html",
+      "Pictures": [{}, {}, {}]
+    },
+    {
+      "Name": "Český šternberk",
+      "Coords": { "x": 14.940668461952214, "y": 49.82058620869393 },
+      "Page": "/pages/cesky_sternberk.html",
+      "Pictures": [{}, {}, {}]
+    }
+  ]
+
+}

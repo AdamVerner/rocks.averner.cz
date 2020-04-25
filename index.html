@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
+  <script type="text/javascript">Loader.load()</script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+  <div class="mapWrapper">
+    <div class="map" id="m"></div>
+  </div>
+
+  <div class="mainBody" id="ContentBody">
+    <!-- All here will be replaced when visiting pages-->
+    <h1 class="AreaName">
+      Adam's rock database
+    </h1>
+
+    <ul id="RockList">
+      <!-- will get filled from rockdb  -->
+    </ul>
+
+  </div>
+
+  <div id="snackbar">
+    <a class="returnLink" href="#" onclick="LoadMain();">Home &times;</a>
+  </div>
+
+</body>
+</html>
