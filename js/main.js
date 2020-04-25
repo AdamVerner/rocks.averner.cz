@@ -75,7 +75,7 @@ function pasteCoordsIntoMap(Layer, coords) {
 
         /* create link which will display selected page */
         var link = document.createElement('a')
-        link.onclick = function(){visitPlace(rock['Page'])};
+        link.onclick = function(){visitPlace(rock['Page'], rock['Name'])};
         link.className = "cardView";
         link.href = '#' + rock['Name']
         link.innerText = 'Visit'
@@ -110,7 +110,7 @@ function setMapCenter(map, data){
 
 }
 
-function visitPlace( placeURL ) {
+function visitPlace( placeURL, name ) {
 
 
     var contentBody = document.getElementById('ContentBody');
@@ -123,6 +123,7 @@ function visitPlace( placeURL ) {
                 console.log('visiting place' + placeURL);
                 contentBody.innerHTML = this.responseText;
                 x.className = "show";
+                document.title = "Adam's rock database - " + name;
         }
 
 		else if (this.readyState == 4 && this.status != 200) {
@@ -143,6 +144,7 @@ function LoadMain(){
     x.className = x.className.replace("show", "");
 
     document.getElementById('ContentBody').innerHTML = ContentBodyDefault;
+    document.title = "Adam's rock database";
 
     return false;
 }
@@ -151,7 +153,7 @@ function RestorePage(RockDB){
     var sucess = false;
     RockDB['rocks'].forEach(function (rock, idx) {
         if( encodeURI('#' + rock['Name']) == location.hash) {
-            visitPlace(rock['Page']);
+            visitPlace(rock['Page'], rock['Name']);
             sucess = true;
         }
     });
@@ -169,7 +171,7 @@ function InsertRocksIntoRockList(RockDB) {
         var link = document.createElement('a')
 
         link.innerText = rock['Name']
-        link.setAttribute('onclick', "visitPlace('" + rock['Page'] +"');")
+        link.setAttribute('onclick', "visitPlace('" + rock['Page'] + "', '" + rock['Name'] + "');")
         link.href = '#' + rock['Name']
         item.appendChild(link);
 
@@ -179,8 +181,6 @@ function InsertRocksIntoRockList(RockDB) {
 
     /* update Default body, so we can restore it later*/
     ContentBodyDefault = document.getElementById('ContentBody').innerHTML;
-
-
 
 }
 //  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
