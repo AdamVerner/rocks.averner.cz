@@ -30,6 +30,12 @@
       "Coords": { "x": 14.940668461952214, "y": 49.82058620869393 },
       "Page": "/pages/cesky_sternberk.html",
       "Pictures": [{}, {}, {}]
+    },
+    {
+      "Name": "Lom Kobyla",
+      "Coords": { "x": 14.081272600326542, "y": 49.91301117614701 },
+      "Page": "/pages/lom_kobyla.html",
+      "Pictures": [{}, {}, {}]
     }
   ]
 
