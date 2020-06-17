@@ -36,6 +36,13 @@
       "Coords": { "x": 14.081272600326542, "y": 49.91301117614701 },
       "Page": "/pages/lom_kobyla.html",
       "Pictures": [{}, {}, {}]
+    },
+    {
+
+      "Name": "Velká",
+      "Coords": { "x": 14.250541446838383, "y": 49.667140980581905 },
+      "Page": "/pages/velka.html",
+      "Pictures": [{}, {}, {}]
     }
   ]
 
