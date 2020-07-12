@@ -90,13 +90,18 @@ function loadCard(card, url){
 
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                card.getBody().innerHTML = this.responseText;
+                var sector_link_parser = /(?<=href=").+?(?=")/;
+                var loc = this.responseText.match(sector_link_parser);
+                if (loc)
+                    card.getBody().innerHTML = this.responseText.replace(sector_link_parser, 'https://www.horosvaz.cz' + loc[0])
+                else
+                    card.getBody().innerHTML = this.responseText;
                 card.sync();
+            }
             if (this.readyState == 4 && this.status != 200) {
-                console.log('failed loading resource');
+                    console.log('failed loading resource');
             }
 
-            }
         };
 
         xmlhttp.open("GET", url, true);
