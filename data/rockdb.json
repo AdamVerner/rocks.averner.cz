@@ -43,6 +43,12 @@
       "Coords": { "x": 14.250541446838383, "y": 49.667140980581905 },
       "Page": "/pages/velka.html",
       "Pictures": [{}, {}, {}]
+    },
+    {
+      "Name": "Hříměždice",
+      "Coords": { "x": 14.294121978912358, "y": 49.691178615025784 },
+      "Page": "/pages/hrimezdice.html",
+      "Pictures": [{}, {}, {}]
     }
   ]
 
