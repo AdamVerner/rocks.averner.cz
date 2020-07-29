@@ -5,15 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
+  <script type="text/javascript" src="js/loadRockdb.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
   <script type="text/javascript">Loader.load()</script>
-  <script type="text/javascript" src="js/main.js"></script>
 
   <title> Adam's rock database </title>
 
 </head>
 
 <body>
+
+  <noscript>
+    <h1 style="color: red;">
+      Unfortunately this page only works with javascript turned on.
+    </h1>
+  </noscript>
+
   <div class="mapWrapper">
     <div class="map" id="m"></div>
   </div>
