@@ -1,65 +1,72 @@
-var ContentBodyDefault;
+// Not yet widely supported
+//import { loadRockdb } from './loadRockdb';
+
+let ContentBodyDefault;
 
 document.addEventListener("DOMContentLoaded", function(){
-    Loader.async = true;
-    Loader.load(null, null, createMap);
+
+    loadRockdb(function (RockDB) {
+
+        InsertRocksIntoScroller(RockDB);
+        InsertRocksIntoRockList(RockDB);
+        if( window.location.href.toLowerCase().indexOf('map=false') === -1 && 'Loader' in window){
+            console.log('creating map');
+            createMap(RockDB);
+        }
+        else{
+            document.getElementById('m').parentElement.remove();
+        }
+        RestorePage(RockDB);
+    })
 });
 
-function createMap() {
+function createMap(RockDB) {
 
-    ContentBodyDefault = document.getElementById('ContentBody').innerHTML;
+    Loader.async = true;
+    console.log('calling Loader');
+    Loader.load(null, null, function () {
 
-    var center = SMap.Coords.fromWGS84(14.41790, 50.12655);
-    var m = new SMap(JAK.gel("m"), center, 9);
-    m.addDefaultLayer(SMap.DEF_SMART_BASE).enable();
-    m.addDefaultControls();
+        console.log('Loading stuff');
 
-    // Grow map to the size of it's parent element
-    var sync = new SMap.Control.Sync();
-    m.addControl(sync);
+        const center = SMap.Coords.fromWGS84(14.41790, 50.12655);
+        const m = new SMap(JAK.gel("m"), center, 9);
+        m.addDefaultLayer(SMap.DEF_SMART_BASE).enable();
+        m.addDefaultControls();
 
-    // create marker layer we will later fill
-    var layer = new SMap.Layer.Marker();
-    m.addLayer(layer);
-    layer.enable();
+        // Grow map to the size of it's parent element
+        const sync = new SMap.Control.Sync();
+        m.addControl(sync);
 
-    loadRockdb(m, layer, '/data/rockdb.json');
+        // create marker layer we will later fill
+        const layer = new SMap.Layer.Marker();
+        m.addLayer(layer);
+        layer.enable();
+        console.log('pasting coords into map');
+        pasteCoordsIntoMap(layer, RockDB);
+        console.log('setting map center coords into map');
+        setMapCenter(m, RockDB);
+        console.log('done');
+    });
+    console.log('calling Loader finished');
 
 }
 
-function loadRockdb(map, Layer, source){
+function InsertRocksIntoScroller(RockDB) {
 
+    let scroll = document.getElementById('ImageScroll');
 
-    var xmlhttp = new XMLHttpRequest();
+    RockDB.images.forEach(function (image) {
 
-    xmlhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-		    /* Request was successful, parse data and pass them to coord handler*/
-            try {
-                var RockDB = JSON.parse(this.responseText);
-                InsertRocksIntoRockList(RockDB);
-                pasteCoordsIntoMap(Layer, RockDB);
-                setMapCenter(map, RockDB);
-                RestorePage(RockDB);
-            }
-            catch (e) {
-                alert("parsing Rockdb failed");
-                console.log("Error", e.stack);
-                console.log("Error", e.name);
-                console.log("Error", e.message);
+        let img = document.createElement('img');
+        img.src = image.thumb;
 
-            }
-        }
+        let outer = document.createElement('a');
+        outer.href = '/gallery.html?img=' + image.hash;
+        outer.appendChild(img);
 
-		else if (this.readyState == 4 && this.status != 200) {
-            alert("Fetching Rockdb failed, contact support");
-            console.log("Can't fetch file " + source + 'server returned ' + this.status);
-            console.log("BODY " + this.responseText);
-		}
-    };
+        scroll.appendChild(outer)
 
-    xmlhttp.open("GET", source, true);
-    xmlhttp.send();
+    });
 }
 
 function pasteCoordsIntoMap(Layer, coords) {
@@ -112,21 +119,25 @@ function setMapCenter(map, data){
 
 function visitPlace( placeURL, name ) {
 
+    console.log('visiting ' + name);
+    let contentBody = document.getElementById('ContentBody');
+    let x = document.getElementById("snackbar");
 
-    var contentBody = document.getElementById('ContentBody');
-    var x = document.getElementById("snackbar");
-
-    var xmlhttp = new XMLHttpRequest();
+    let xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
+		if (this.readyState === 4 && this.status === 200) {
                 console.log('visiting place' + placeURL);
+
+                /* update Default body, so we can restore it later*/
+                ContentBodyDefault = contentBody.innerHTML;
+
                 contentBody.innerHTML = this.responseText;
                 x.className = "show";
                 document.title = "Adam's rock database - " + name;
         }
 
-		else if (this.readyState == 4 && this.status != 200) {
+		else if (this.readyState === 4 && this.status !== 200) {
             alert("visit failed");
             console.log("Can't fetch file " + placeURL + 'server returned ' + this.status);
             console.log("BODY " + this.responseText);
@@ -150,9 +161,9 @@ function LoadMain(){
 }
 
 function RestorePage(RockDB){
-    var sucess = false;
+    let sucess = false;
     RockDB['rocks'].forEach(function (rock, idx) {
-        if( encodeURI('#' + rock['Name']) == location.hash) {
+        if( encodeURI('#' + rock['Name']) === location.hash) {
             visitPlace(rock['Page'], rock['Name']);
             sucess = true;
         }
@@ -178,9 +189,6 @@ function InsertRocksIntoRockList(RockDB) {
         rocklList.appendChild(item);
 
     });
-
-    /* update Default body, so we can restore it later*/
-    ContentBodyDefault = document.getElementById('ContentBody').innerHTML;
 
 }
 //  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);

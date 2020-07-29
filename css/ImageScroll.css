@@ -1,0 +1,73 @@
+
+.ScrollOverlay{
+  position: relative;
+}
+
+.ImageScroll{
+  overflow: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ImageScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.ImageScroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/*TODO display only thumbnails*/
+.ImageScroll img{
+  margin: 20px 10px 0 10px;
+  max-width: 150px;
+  max-height: 150px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+}
+
+.ImageScroll img:last-of-type{
+  margin-right: 0;
+}
+
+.ImageScroll:hover img{
+  filter: blur(1px);
+  transition: 250ms;
+}
+
+.ImageScroll img:hover{
+  /* /enlarge
+  /overlay gray
+  */
+  filter: blur(0px);
+  transform: scale(1.1);
+
+}
+
+.ScrollOverlay .prev,
+.ScrollOverlay .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Position the "next button" to the right */
+.ScrollOverlay .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.ScrollOverlay .prev:hover,
+.ScrollOverlay .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

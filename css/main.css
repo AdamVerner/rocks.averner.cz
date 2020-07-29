@@ -9,6 +9,7 @@ html {
   max-width: 100%;
   height: 50vh;
   margin: 10px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
 
 .map{
@@ -46,49 +47,6 @@ html {
   padding-right: 15px;
 }
 
-#snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: #333;
-  color: #eeeeee;
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 15px;
-  font-size: 17px;
-
-}
-
-#snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-@-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 15px; opacity: 1;}
-}
-
-@keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 15; opacity: 1;}
-}
-
-.returnLink:link, .returnLink:visited {
-  text-decoration: none;
-  font-size: 17px;
-  color: inherit;
-    opacity: 0.3;
-}
-.returnLink:hover, .returnLink:active {
-   opacity: 1;
-}
-
 .image{
   max-width: 100%;
   height: auto;
@@ -99,7 +57,7 @@ html {
   height: auto;
 }
 
-#RockList li a{
+#RockList li a, #Utilities li a{
   transition: all 0.2s;
   text-transform: uppercase;
   text-decoration: underline;
@@ -111,7 +69,7 @@ html {
   position: relative;
 }
 
-#RockList li a:hover{
+#RockList li a:hover, #Utilities li a:hover{
   text-decoration: underline;
   cursor: pointer;
   color: #919191;

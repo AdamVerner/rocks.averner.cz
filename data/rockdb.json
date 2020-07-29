@@ -1,55 +1,164 @@
 {
-
   "rocks": [
     {
       "Name": "Roviště",
-      "Coords": { "x": 14.255481515312198, "y": 49.661316656629054 },
+      "Coords": {
+        "x": 14.255481515312198,
+        "y": 49.661316656629054
+      },
       "Page": "/pages/roviste.html",
-      "Pictures": [{}, {}, {}]
+      "Pictures": [
+        {
+          "Source": "img/2019-08-18-roviste-01.jpg",
+          "Thumbnail": "img/Thumbnails/2019-08-18-roviste-01.jpg"
+        },
+        {
+          "Source": "img/2019-08-18-roviste-02.jpg",
+          "Thumbnail": "img/Thumbnails/2019-08-18-roviste-02.jpg"
+        },
+        {
+          "Source": "img/2019-08-18-roviste-03.jpg",
+          "Thumbnail": "img/Thumbnails/2019-08-18-roviste-03.jpg"
+        }
+      ]
     },
     {
       "Name": "Černá skála",
-      "Coords": { "x": 14.220446501159671, "y": 49.92066412591082 },
+      "Coords": {
+        "x": 14.220446501159671,
+        "y": 49.92066412591082
+      },
       "Page": "/pages/cerna_skala.html",
-      "Pictures": [{}, {}, {}]
+      "Pictures": [
+        {
+          "Source": "https://www.horosvaz.cz/res/archive/159/023271.jpg",
+          "Thumbnail": "https://www.horosvaz.cz/res/archive/159/023271.jpg"
+        }
+      ]
     },
     {
       "Name": "Prokopské údolí",
-      "Coords": { "x": 14.355254326248172, "y": 50.038889822001586 },
+      "Coords": {
+        "x": 14.355254326248172,
+        "y": 50.038889822001586
+      },
       "Page": "/pages/prokopske_udoli.html",
-      "Pictures": [{}, {}, {}]
+      "Pictures": [
+        {
+          "Source": "https://www.horosvaz.cz/res/archive/202/048824.jpg",
+          "Thumbnail": "https://www.horosvaz.cz/res/archive/202/048824.jpg"
+        },
+        {
+          "Source": "https://www.horosvaz.cz/res/archive/078/048825.jpg",
+          "Thumbnail": "https://www.horosvaz.cz/res/archive/078/048825.jpg"
+        }
+      ]
     },
     {
       "Name": "Tetín",
-      "Coords": { "x": 14.106828127288821, "y": 49.94888087606783 },
+      "Coords": {
+        "x": 14.106828127288821,
+        "y": 49.94888087606783
+      },
       "Page": "/pages/tetin.html",
-      "Pictures": [{}, {}, {}]
+      "Pictures": [
+        {
+          "Source": "img/2019-07-05-tetin-01.jpg",
+          "Thumbnail": "img/Thumbnails/2019-07-05-tetin-01.jpg"
+        },
+        {
+          "Source": "img/2019-07-05-tetin-02.jpg",
+          "Thumbnail": "img/Thumbnails/2019-07-05-tetin-02.jpg"
+        }
+      ]
     },
     {
       "Name": "Český šternberk",
-      "Coords": { "x": 14.940668461952214, "y": 49.82058620869393 },
+      "Coords": {
+        "x": 14.940668461952214,
+        "y": 49.82058620869393
+      },
       "Page": "/pages/cesky_sternberk.html",
-      "Pictures": [{}, {}, {}]
+      "Pictures": [
+        {
+          "Source": "img/2020-04-07-cesky_sternberk-02.jpg",
+          "Thumbnail": "img/Thumbnails/2020-04-07-cesky_sternberk-02.jpg"
+        },
+        {
+          "Source": "img/2020-04-07-cesky_sternberk-03.jpg",
+          "Thumbnail": "img/Thumbnails/2020-04-07-cesky_sternberk-03.jpg"
+        }
+      ]
     },
     {
       "Name": "Lom Kobyla",
-      "Coords": { "x": 14.081272600326542, "y": 49.91301117614701 },
+      "Coords": {
+        "x": 14.081272600326542,
+        "y": 49.91301117614701
+      },
       "Page": "/pages/lom_kobyla.html",
-      "Pictures": [{}, {}, {}]
+      "Pictures": [
+        {
+          "Source": "https://www.zonerama.com/photos/227201374_769x512_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/227201374_150x99_16.jpg"
+        },
+        {
+          "Source": "https://www.zonerama.com/photos/227201208_769x512_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/227201208_150x99_16.jpg"
+        },
+        {
+          "Source": "https://www.zonerama.com/photos/227201465_769x512_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/227201465_150x99_16.jpg"
+        },
+        {
+          "Source": "https://www.zonerama.com/photos/227201279_769x512_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/227201279_150x99_16.jpg"
+        }
+      ]
     },
     {
-
       "Name": "Velká",
-      "Coords": { "x": 14.250541446838383, "y": 49.667140980581905 },
+      "Coords": {
+        "x": 14.250541446838383,
+        "y": 49.667140980581905
+      },
       "Page": "/pages/velka.html",
-      "Pictures": [{}, {}, {}]
+      "Pictures": [
+        {
+          "Source": "https://www.zonerama.com/photos/228524262_946x709_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/228524262_150x112_16.jpg"
+        },
+        {
+          "Source": "https://www.zonerama.com/photos/228524246_657x876_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/228524246_112x150_16.jpg"
+        },
+        {
+          "Source": "https://www.zonerama.com/photos/228524249_657x876_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/228524249_112x150_16.jpg"
+        }
+      ]
     },
     {
       "Name": "Hříměždice",
-      "Coords": { "x": 14.294121978912358, "y": 49.691178615025784 },
+      "Coords": {
+        "x": 14.294121978912358,
+        "y": 49.691178615025784
+      },
       "Page": "/pages/hrimezdice.html",
-      "Pictures": [{}, {}, {}]
+      "Pictures": [
+        {
+          "Source": "https://www.zonerama.com/photos/232150301_687x916_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/232150301_112x150_16.jpg"
+        },
+        {
+          "Source": "https://www.zonerama.com/photos/232150334_687x916_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/232150334_112x150_16.jpg"
+        },
+        {
+          "Source": "https://www.zonerama.com/photos/232150325_999x803_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/232150325_150x120_16.jpg"
+        }
+      ]
     }
   ]
-
 }

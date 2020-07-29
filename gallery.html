@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="js/loadRockdb.js"></script>
+  <script type="text/javascript" src="js/gallery.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/gallery.css">
+  <link rel="stylesheet" type="text/css" href="css/snackbar.css">
+
+  <title> Adam's rock database </title>
+
+</head>
+<body>
+  <noscript>
+    <h1 style="color: red;">
+      Unfortunately this page only works with javascript which is used for loading images
+    </h1>
+  </noscript>
+
+<!-- Photo Grid -->
+<div class="row">
+  <!-- All images will be inserted from javascript-->
+  <div class="column" id="col-0"></div>
+  <div class="column" id="col-1"></div>
+  <div class="column" id="col-2"></div>
+  <div class="column" id="col-3"></div>
+</div>
+
+<!-- The Modal -->
+<div id="modal" class="modal">
+
+  <!-- The Close Button -->
+  <!-- close button function is handled by the parent element -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="modal-content" onclick="stopPropagation();" alt="placeholder">
+
+</div>
+
+<div id="snackbar" style="visibility: visible;">
+    <a class="returnLink" href="/">Home &times;</a>
+  </div>
+
+
+</body>
+</html>

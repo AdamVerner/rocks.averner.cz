@@ -4,9 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/snackbar.css">
+  <link rel="stylesheet" type="text/css" href="css/ImageScroll.css">
 
   <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
-  <script type="text/javascript">Loader.load()</script>
+  <script type="text/javascript" src="js/loadRockdb.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
   <title> Adam's rock database </title>
@@ -14,12 +16,30 @@
 </head>
 
 <body>
+
+  <noscript>
+    <h1 style="color: red;">
+      Unfortunately this page only works with javascript turned on.
+    </h1>
+  </noscript>
+
   <div class="mapWrapper">
     <div class="map" id="m"></div>
   </div>
 
   <div class="mainBody" id="ContentBody">
     <!-- All here will be replaced when visiting pages-->
+
+    <div class="ScrollOverlay" >
+      <a class="prev" onclick="document.getElementById('ImageScroll').scrollBy(-this.parentElement.offsetWidth/2, 0)">
+        &#x276E;</a>
+      <a class="next" onclick="document.getElementById('ImageScroll').scrollBy(this.parentElement.offsetWidth/2, 0)">
+        &#x276F;</a>
+      <div class="ImageScroll" id="ImageScroll">
+        <!--- Thumbnails filled here -->
+      </div>
+    </div>
+
     <h1 class="AreaName">
       Adam's rock database
     </h1>
@@ -28,10 +48,11 @@
       <!-- will get filled from rockdb  -->
     </ul>
 
-    <h2>Utilites</h2>
-    <ul>
-        <li> <a href="horosvaz.html">Horosvaz wia mapy.cz</a></li>
-        <li> <a href="coord_extractor.html">rockdb entry creator</a></li>
+    <h2>Utilities</h2>
+    <ul id="Utilities">
+      <li> <a href="gallery.html">Gallery</a></li>
+      <li> <a href="horosvaz.html">Horosvaz wia mapy.cz</a></li>
+      <li> <a href="coord_extractor.html">rockdb entry creator</a></li>
     </ul>
 
   </div>
