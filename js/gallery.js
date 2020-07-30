@@ -1,16 +1,15 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    columns = [
-        {height:0, div:document.getElementById('col-0')},
-        {height:0, div:document.getElementById('col-1')},
-        {height:0, div:document.getElementById('col-2')},
-        {height:0, div:document.getElementById('col-3')}
+    let columns = [
+        {height: 0, div: document.getElementById('col-0')},
+        {height: 0, div: document.getElementById('col-1')},
+        {height: 0, div: document.getElementById('col-2')},
+        {height: 0, div: document.getElementById('col-3')}
     ];
 
 
     loadRockdb(function (RockDB) {
-        console.log(RockDB);
-        RockDB
+        console.log(document.getElementById('col-0').clientHeight, document.getElementById('col-0').clientWidth, document.getElementById('col-0'));
 
         RockDB.rocks.forEach(function (itm, idx) {
 
@@ -19,7 +18,9 @@ document.addEventListener("DOMContentLoaded", function(){
                 img.style.width = '100%';
 
                 img.onload = function () {
-                    col = columns.reduce((acc, cur) => {return cur.height < acc.height ? cur : acc}, columns[0]);
+                    let col = columns.reduce((acc, cur) => {
+                        return cur.height < acc.height ? cur : acc
+                    }, columns[0]);
                     col.div.appendChild(img);
 
                     console.log(columns[0].height, columns[1].height, columns[2].height, columns[3].height);

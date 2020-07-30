@@ -1,4 +1,4 @@
-// Not yet supported
+// Not yet widely supported
 //import { loadRockdb } from './loadRockdb';
 
 var ContentBodyDefault;
@@ -27,6 +27,7 @@ function createMap() {
     layer.enable();
 
     loadRockdb(function (RockDB) {
+        InsertRocksIntoScroller(RockDB);
         InsertRocksIntoRockList(RockDB);
         pasteCoordsIntoMap(layer, RockDB);
         setMapCenter(m, RockDB);
@@ -34,6 +35,26 @@ function createMap() {
     });
 
 }
+
+function InsertRocksIntoScroller(RockDB) {
+
+    let scroll = document.getElementById('ImageScroll');
+
+    RockDB.rocks.forEach(function (itm, idx) {
+
+        itm.Pictures.forEach(function (itm, idx) {
+
+            console.log('adding ' + itm);
+
+            let img = document.createElement('img');
+            img.src = itm;
+            scroll.appendChild(img)
+
+            });
+    });
+}
+
+
 
 function pasteCoordsIntoMap(Layer, coords) {
 

@@ -116,3 +116,50 @@ html {
   cursor: pointer;
   color: #919191;
 }
+
+.ImageScroll{
+  overflow: hidden;
+  white-space: nowrap;
+  margin: auto;
+  position: relative;
+  border: red 1px solid;
+}
+
+.ImageScroll img{
+  margin: 20px 10px 0 10px;
+  max-width: 150px;
+  max-height: 150px;
+}
+.ImageScroll img:first-of-type{
+  margin-left: 0;
+}
+
+.ImageScroll img:last-of-type{
+  margin-right: 0;
+}
+
+.prev,
+.next {
+  white-space: normal;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+/* Next & previous buttons */
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
