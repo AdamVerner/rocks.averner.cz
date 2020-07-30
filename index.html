@@ -29,9 +29,14 @@
   <div class="mainBody" id="ContentBody">
     <!-- All here will be replaced when visiting pages-->
 
-    <div class="ImageScroll" id="ImageScroll">
-      <a class="prev" onclick="this.parentElement.scrollBy(-100, 0)">&#x276E;</a>
-      <a class="next" onclick="this.parentElement.scrollBy(100, 0)">&#x276F;</a>
+    <div class="ScrollOverlay" >
+      <a class="prev" onclick="document.getElementById('ImageScroll').scrollBy(-this.parentElement.offsetWidth/2, 0)">
+        &#x276E;</a>
+      <a class="next" onclick="document.getElementById('ImageScroll').scrollBy(this.parentElement.offsetWidth/2, 0)">
+        &#x276F;</a>
+      <div class="ImageScroll" id="ImageScroll">
+        <!--- Thumbnails filled here -->
+      </div>
     </div>
 
     <h1 class="AreaName">
@@ -44,8 +49,9 @@
 
     <h2>Utilites</h2>
     <ul>
-        <li> <a href="horosvaz.html">Horosvaz wia mapy.cz</a></li>
-        <li> <a href="coord_extractor.html">rockdb entry creator</a></li>
+      <li> <a href="gallery.html">Gallery</a></li>
+      <li> <a href="horosvaz.html">Horosvaz wia mapy.cz</a></li>
+      <li> <a href="coord_extractor.html">rockdb entry creator</a></li>
     </ul>
 
   </div>

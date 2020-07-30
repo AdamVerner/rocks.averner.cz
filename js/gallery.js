@@ -24,9 +24,6 @@ document.addEventListener("DOMContentLoaded", function(){
                     col.div.appendChild(img);
 
                     console.log(columns[0].height, columns[1].height, columns[2].height, columns[3].height);
-                    console.log(col.div.id, col);
-                    console.log(img.height, img.width, img);
-
                     col.height += img.height;
                 }
 
@@ -34,11 +31,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
                 img.onclick = function () {
                     console.log('Image selected');
-                    modal = document.getElementById('modal');
-                    modal.style.display = 'block';
-
-                    modal_content = document.getElementById('modal-content');
-                    modal_content.src = this.src;
+                    document.getElementById('modal').style.display = 'block';;
+                    document.getElementById('modal-content').src = this.src;
                 }
 
 
