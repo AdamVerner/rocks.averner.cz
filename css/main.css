@@ -118,13 +118,26 @@ html {
 }
 
 .ImageScroll{
-  overflow: hidden;
+  overflow: auto;
   white-space: nowrap;
   margin: auto;
   position: relative;
   border: red 1px solid;
 }
 
+/*TODO style the scrollbar*/
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ImageScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.ImageScroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/*TODO display only thumbnails*/
 .ImageScroll img{
   margin: 20px 10px 0 10px;
   max-width: 150px;
