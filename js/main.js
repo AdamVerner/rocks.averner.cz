@@ -40,17 +40,17 @@ function InsertRocksIntoScroller(RockDB) {
 
     let scroll = document.getElementById('ImageScroll');
 
-    RockDB.rocks.forEach(function (itm, idx) {
+    RockDB.images.forEach(function (image) {
 
-        itm.Pictures.forEach(function (itm, idx) {
+        console.log('adding ' + image);
 
-            console.log('adding ' + itm);
+        let img = document.createElement('img');
+        img.src = image.thumb;
+        img.onclick = function () {
+            window.location = '/gallery.html?img=' + image.hash;
+        };
+        scroll.appendChild(img)
 
-            let img = document.createElement('img');
-            img.src = itm;
-            scroll.appendChild(img)
-
-            });
     });
 }
 
@@ -107,10 +107,10 @@ function setMapCenter(map, data){
 function visitPlace( placeURL, name ) {
 
 
-    var contentBody = document.getElementById('ContentBody');
-    var x = document.getElementById("snackbar");
+    let contentBody = document.getElementById('ContentBody');
+    let x = document.getElementById("snackbar");
 
-    var xmlhttp = new XMLHttpRequest();
+    let xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
@@ -144,9 +144,9 @@ function LoadMain(){
 }
 
 function RestorePage(RockDB){
-    var sucess = false;
+    let sucess = false;
     RockDB['rocks'].forEach(function (rock, idx) {
-        if( encodeURI('#' + rock['Name']) == location.hash) {
+        if( encodeURI('#' + rock['Name']) === location.hash) {
             visitPlace(rock['Page'], rock['Name']);
             sucess = true;
         }

@@ -1,5 +1,10 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
+    loadRockdb(rockdb => DisplayScroller(rockdb));
 
+    history.replaceState({}, null, window.location.pathname);
+});
+
+function DisplayScroller(rockdb) {
     let columns = [
         {height: 0, div: document.getElementById('col-0')},
         {height: 0, div: document.getElementById('col-1')},
@@ -7,40 +12,60 @@ document.addEventListener("DOMContentLoaded", function(){
         {height: 0, div: document.getElementById('col-3')}
     ];
 
+    rockdb.images.forEach(function (itm, idx) {
 
-    loadRockdb(function (RockDB) {
-        console.log(document.getElementById('col-0').clientHeight, document.getElementById('col-0').clientWidth, document.getElementById('col-0'));
+        const img = document.createElement('img');
+        img.style.width = '100%';
 
-        RockDB.rocks.forEach(function (itm, idx) {
+        img.onload = function () {
+            let col = columns.reduce((acc, cur) => {
+                return cur.height < acc.height ? cur : acc
+            }, columns[0]);
+            col.div.appendChild(img);
 
-            itm.Pictures.forEach(function (itm, idx) {
-                const img = document.createElement('img');
-                img.style.width = '100%';
+            console.log(columns[0].height, columns[1].height, columns[2].height, columns[3].height);
+            col.height += img.height;
+        }
 
-                img.onload = function () {
-                    let col = columns.reduce((acc, cur) => {
-                        return cur.height < acc.height ? cur : acc
-                    }, columns[0]);
-                    col.div.appendChild(img);
+        img.src = itm.src;
+        img.onclick = function () {
+            displayImage(itm);
+        }
 
-                    console.log(columns[0].height, columns[1].height, columns[2].height, columns[3].height);
-                    col.height += img.height;
-                }
+        if (window.location.search.indexOf('img=' + itm.hash) !== -1)
+            displayImage(itm);
+    })
+}
 
-                img.src = itm;
+function displayImage(image) {
+    console.log('Image ' + image + ' selected');
 
-                img.onclick = function () {
-                    console.log('Image selected');
-                    document.getElementById('modal').style.display = 'block';;
-                    document.getElementById('modal-content').src = this.src;
-                }
+    // check if the image is already in url
+    if (window.location.search.indexOf('img=') === -1)
+        history.pushState({}, null, window.location.pathname + '?img=' + image.hash);
 
+    let modal_content = document.getElementById('modal-content');
+    modal_content.src = image.src;
 
-            })
+    let modal = document.getElementById('modal');
+    modal.style.display = 'flex';
 
-        })
+    modal.onclick = function () {
+        // clear the search params
+        history.pushState({}, null, window.location.pathname);
+        modal.style.display = 'none';
+    }
+}
 
-    });
+window.onpopstate = function (e) {
+    if (e.state) {
+        console.log('state = ' + e.state, window.location.search.indexOf('img='));
+        let params = new URLSearchParams(window.location.search);
 
-
-});
+        const image = rdb.images.find(e => e.hash === params.get('img'));
+        if (image)
+            displayImage(image);
+        else
+            document.getElementById('modal').style.display = 'none';
+    }
+}

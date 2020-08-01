@@ -29,18 +29,21 @@
 </div>
 
 <!-- The Modal -->
-<div id="modal" class="modal" onclick="this.style.display='none';">
+<div id="modal" class="modal">
 
   <!-- The Close Button -->
   <!-- close button function is handled by the parent element -->
   <span class="close">&times;</span>
 
   <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="modal-content" onclick="event.stopPropagation();">
+  <img class="modal-content" id="modal-content" onclick="stopPropagation();" alt="placeholder">
 
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
 </div>
+
+<div id="snackbar">
+    <a class="returnLink" href="/">Home &times;</a>
+  </div>
+
 
 </body>
 </html>

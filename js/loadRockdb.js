@@ -1,3 +1,18 @@
+String.prototype.hashCode = function() {
+    var hash = 0;
+    if (this.length === 0) {
+        return hash;
+    }
+    for (var i = 0; i < this.length; i++) {
+        var char = this.charCodeAt(i);
+        hash = ((hash<<5)-hash)+char;
+        hash = hash & hash; // Convert to 32bit integer
+    }
+    return Math.abs(hash).toString(16);
+}
+
+let rdb;
+
 function loadRockdb(callback, source = '/data/rockdb.json'){
 
     const xmlhttp = new XMLHttpRequest();
@@ -7,6 +22,23 @@ function loadRockdb(callback, source = '/data/rockdb.json'){
 		    /* Request was successful, parse data and pass them to coord handler*/
             try {
                 let RockDB = JSON.parse(this.responseText);
+
+                RockDB.images = [];
+                RockDB['rocks'].forEach(function (rock, idx) {
+                    rock['Pictures'].forEach(function (itm, idx) {
+                        RockDB.images.push(
+                            {
+                                src: itm['Source'],
+                                hash: itm['Source'].hashCode(),
+                                thumb: itm['Thumbnail'],
+                                rockName: rock['Name'],
+                                rockPage: rock['Page'],
+                            }
+                        )
+                    });
+                });
+
+                rdb = RockDB;
                 callback(RockDB)
             }
             catch (e) {
