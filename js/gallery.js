@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    loadRockdb(rockdb => DisplayScroller(rockdb));
+    loadRockdb(function (rockdb){
+        DisplayGalleryScroll(rockdb);
+        urlChange();
+    });
 
-    history.replaceState({}, null, window.location.pathname);
 });
 
-function DisplayScroller(rockdb) {
+function DisplayGalleryScroll(rockdb) {
     let columns = [
         {height: 0, div: document.getElementById('col-0')},
         {height: 0, div: document.getElementById('col-1')},
@@ -23,7 +25,7 @@ function DisplayScroller(rockdb) {
             }, columns[0]);
             col.div.appendChild(img);
 
-            console.log(columns[0].height, columns[1].height, columns[2].height, columns[3].height);
+            // econsole.log(columns[0].height, columns[1].height, columns[2].height, columns[3].height);
             col.height += img.height;
         }
 
@@ -58,14 +60,16 @@ function displayImage(image) {
 }
 
 window.onpopstate = function (e) {
-    if (e.state) {
-        console.log('state = ' + e.state, window.location.search.indexOf('img='));
-        let params = new URLSearchParams(window.location.search);
+    console.log('pop state caught' + e)
+    urlChange();
+}
 
-        const image = rdb.images.find(e => e.hash === params.get('img'));
-        if (image)
-            displayImage(image);
-        else
-            document.getElementById('modal').style.display = 'none';
-    }
+function urlChange() {
+    let params = new URLSearchParams(window.location.search);
+
+    const image = rdb.images.find(e => e.hash === params.get('img'));
+    if (image)
+        displayImage(image);
+    else
+        document.getElementById('modal').style.display = 'none';
 }

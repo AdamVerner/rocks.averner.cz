@@ -1,38 +1,53 @@
 // Not yet widely supported
 //import { loadRockdb } from './loadRockdb';
 
-var ContentBodyDefault;
+let ContentBodyDefault;
 
 document.addEventListener("DOMContentLoaded", function(){
-    Loader.async = true;
-    Loader.load(null, null, createMap);
-});
-
-function createMap() {
-
-    ContentBodyDefault = document.getElementById('ContentBody').innerHTML;
-
-    var center = SMap.Coords.fromWGS84(14.41790, 50.12655);
-    var m = new SMap(JAK.gel("m"), center, 9);
-    m.addDefaultLayer(SMap.DEF_SMART_BASE).enable();
-    m.addDefaultControls();
-
-    // Grow map to the size of it's parent element
-    var sync = new SMap.Control.Sync();
-    m.addControl(sync);
-
-    // create marker layer we will later fill
-    let layer = new SMap.Layer.Marker();
-    m.addLayer(layer);
-    layer.enable();
 
     loadRockdb(function (RockDB) {
+
         InsertRocksIntoScroller(RockDB);
         InsertRocksIntoRockList(RockDB);
-        pasteCoordsIntoMap(layer, RockDB);
-        setMapCenter(m, RockDB);
+        if( window.location.href.toLowerCase().indexOf('map=false') === -1 && 'Loader' in window){
+            console.log('creating map');
+            createMap(RockDB);
+        }
+        else{
+            document.getElementById('m').parentElement.remove();
+        }
         RestorePage(RockDB);
+    })
+});
+
+function createMap(RockDB) {
+
+    Loader.async = true;
+    console.log('calling Loader');
+    Loader.load(null, null, function () {
+
+        console.log('Loading stuff');
+
+        const center = SMap.Coords.fromWGS84(14.41790, 50.12655);
+        const m = new SMap(JAK.gel("m"), center, 9);
+        m.addDefaultLayer(SMap.DEF_SMART_BASE).enable();
+        m.addDefaultControls();
+
+        // Grow map to the size of it's parent element
+        const sync = new SMap.Control.Sync();
+        m.addControl(sync);
+
+        // create marker layer we will later fill
+        const layer = new SMap.Layer.Marker();
+        m.addLayer(layer);
+        layer.enable();
+        console.log('pasting coords into map');
+        pasteCoordsIntoMap(layer, RockDB);
+        console.log('setting map center coords into map');
+        setMapCenter(m, RockDB);
+        console.log('done');
     });
+    console.log('calling Loader finished');
 
 }
 
@@ -41,8 +56,6 @@ function InsertRocksIntoScroller(RockDB) {
     let scroll = document.getElementById('ImageScroll');
 
     RockDB.images.forEach(function (image) {
-
-        console.log('adding ' + image);
 
         let img = document.createElement('img');
         img.src = image.thumb;
@@ -53,8 +66,6 @@ function InsertRocksIntoScroller(RockDB) {
 
     });
 }
-
-
 
 function pasteCoordsIntoMap(Layer, coords) {
 
@@ -106,21 +117,25 @@ function setMapCenter(map, data){
 
 function visitPlace( placeURL, name ) {
 
-
+    console.log('visiting ' + name);
     let contentBody = document.getElementById('ContentBody');
     let x = document.getElementById("snackbar");
 
     let xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
+		if (this.readyState === 4 && this.status === 200) {
                 console.log('visiting place' + placeURL);
+
+                /* update Default body, so we can restore it later*/
+                ContentBodyDefault = contentBody.innerHTML;
+
                 contentBody.innerHTML = this.responseText;
                 x.className = "show";
                 document.title = "Adam's rock database - " + name;
         }
 
-		else if (this.readyState == 4 && this.status != 200) {
+		else if (this.readyState === 4 && this.status !== 200) {
             alert("visit failed");
             console.log("Can't fetch file " + placeURL + 'server returned ' + this.status);
             console.log("BODY " + this.responseText);
@@ -172,9 +187,6 @@ function InsertRocksIntoRockList(RockDB) {
         rocklList.appendChild(item);
 
     });
-
-    /* update Default body, so we can restore it later*/
-    ContentBodyDefault = document.getElementById('ContentBody').innerHTML;
 
 }
 //  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);

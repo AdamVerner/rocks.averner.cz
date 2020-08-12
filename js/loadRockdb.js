@@ -20,7 +20,6 @@ function loadRockdb(callback, source = '/data/rockdb.json'){
     xmlhttp.onreadystatechange = function() {
 		if (this.readyState === 4 && this.status === 200) {
 		    /* Request was successful, parse data and pass them to coord handler*/
-            try {
                 let RockDB = JSON.parse(this.responseText);
 
                 RockDB.images = [];
@@ -40,13 +39,6 @@ function loadRockdb(callback, source = '/data/rockdb.json'){
 
                 rdb = RockDB;
                 callback(RockDB)
-            }
-            catch (e) {
-                alert("parsing Rockdb failed");
-                console.log("Error", e.stack);
-                console.log("Error", e.name);
-                console.log("Error", e.message);
-            }
         }
 
 		else if (this.readyState === 4 && this.status !== 200) {

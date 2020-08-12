@@ -26,12 +26,20 @@
       function click(e, elm) { /* Došlo ke kliknutí, spočítáme kde */
           var coords = SMap.Coords.fromEvent(e.data.event, m);
           alert(
-                '    {\n' +
-                '      "Name": "YOURNAME",\n' +
-                '      "Coords": { "x": ' + coords.x + ', "y": ' + coords.y + ' },\n'+
-                '      "Page": "/pages/YOURNAME.html",\n'+
-                '      "Pictures": [{}, {}, {}]\n'+
-                '    }\n');
+                  '    {\n' +
+                  '      "Name": "SECTOR_NAME",\n' +
+                  '      "Coords": {\n' +
+                  '       "x": ' + coords.x + ',\n' +
+                  '        "x": ' + coords.y + '\n' +
+                  '      },\n' +
+                  '      "Page": "/pages/SECTOR_NAME.html",\n' +
+                  '      "Pictures": [\n' +
+                  '        {\n' +
+                  '          "Source": "img/SECTOR_IMAGE1.jpg",\n' +
+                  '          "Thumbnail": "img/Thumbnails/SECTOR_IMAGE1.PNG"\N' +
+                  '        },\n' +
+                  '      ]\n' +
+                  '    },');
       }
       m.getSignals().addListener(window, "map-click", click); /* Při signálu kliknutí volat tuto funkci */
     }
