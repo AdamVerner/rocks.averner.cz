@@ -59,10 +59,12 @@ function InsertRocksIntoScroller(RockDB) {
 
         let img = document.createElement('img');
         img.src = image.thumb;
-        img.onclick = function () {
-            window.location = '/gallery.html?img=' + image.hash;
-        };
-        scroll.appendChild(img)
+
+        let outer = document.createElement('a');
+        outer.href = '/gallery.html?img=' + image.hash;
+        outer.appendChild(img);
+
+        scroll.appendChild(outer)
 
     });
 }
