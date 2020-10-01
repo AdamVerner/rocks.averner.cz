@@ -21,7 +21,41 @@ function createMap() {
 
     loadHorosvaz(m, layer, 'https://cors-anywhere.herokuapp.com/https://www.horosvaz.cz/index.php?cmd=skaly-mapa&type=regiony');
 
+    addListener(m);
 
+}
+
+
+function addListener(map) {
+
+    var listener = function (e) {
+        console.log('e.type = ' + e.type + ' e: ' + e);
+        console.log(e.target._dom.body.innerText);
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var sector_link_parser = /(?<=href=").+?(?=")/;
+                var loc = this.responseText.match(sector_link_parser);
+                if (loc)
+                    e.target._dom.body.innerHTML = this.responseText.replace(sector_link_parser, 'https://www.horosvaz.cz' + loc[0])
+                else
+                    e.target._dom.body.innerHTML = this.responseText;
+                // card.sync();
+            }
+            if (this.readyState == 4 && this.status != 200) {
+                console.log('failed loading resource');
+            }
+
+        };
+
+        xmlhttp.open("GET", e.target._dom.body.innerText, true);
+        xmlhttp.send();
+
+    }
+
+    var signals = map.getSignals();
+    signals.addListener(window, "card-open", listener);
 }
 
 function fallBackHorosvaz(map, Layer) {
@@ -79,39 +113,6 @@ function loadHorosvaz(map, Layer, source){
 
 }
 
-function loadCard(card, url){
-    console.log("registering resource loader ");
-    var btn = document.createElement('button')
-    btn.innerText = 'Load';
-
-    btn.onclick = function () {
-        console.log("Loading resource");
-        var xmlhttp = new XMLHttpRequest();
-
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var sector_link_parser = /(?<=href=").+?(?=")/;
-                var loc = this.responseText.match(sector_link_parser);
-                if (loc)
-                    card.getBody().innerHTML = this.responseText.replace(sector_link_parser, 'https://www.horosvaz.cz' + loc[0])
-                else
-                    card.getBody().innerHTML = this.responseText;
-                card.sync();
-            }
-            if (this.readyState == 4 && this.status != 200) {
-                    console.log('failed loading resource');
-            }
-
-        };
-
-        xmlhttp.open("GET", url, true);
-        xmlhttp.send();
-    }
-
-    card.getBody().appendChild(btn);
-
-}
-
 function ProcessHorosvaz(htmlSource, map, layer) {
     console.log(layer);
 
@@ -124,23 +125,23 @@ function ProcessHorosvaz(htmlSource, map, layer) {
 
         let innerJson = raw.match(/{.*}/);
         let entry = JSON.parse(innerJson);
-            /* Create card with location miniature */
-            var card = new SMap.Card();
-            card.getContainer().style.width = 'auto';
-            card.getHeader().innerHTML = '<span class="cardHeader">'+ entry['title'] +'</span>';
+        /* Create card with location miniature */
+        var card = new SMap.Card();
+        card.getContainer().style.width = 'auto';
+        card.getHeader().innerHTML = '<span class="cardHeader">'+ entry['title'] +'</span>';
 
-            loadCard(card, 'https://cors-anywhere.herokuapp.com/https://www.horosvaz.cz' + entry['events'][0]['url']);
+        card.getBody().innerText = 'https://cors-anywhere.herokuapp.com/https://www.horosvaz.cz' + entry['events'][0]['url'];
 
 
-            /* create marker with embedded card */
-            var options = { title: entry['title'] };
-            var coord = SMap.Coords.fromWGS84(entry['lng'], entry['lat']);
-            var marker = new SMap.Marker(coord, "rockMarker" + idx, options);
-            marker.decorate(SMap.Marker.Feature.Card, card);
+        /* create marker with embedded card */
+        var options = { title: entry['title'] };
+        var coord = SMap.Coords.fromWGS84(entry['lng'], entry['lat']);
+        var marker = new SMap.Marker(coord, "rockMarker" + idx, options);
+        marker.decorate(SMap.Marker.Feature.Card, card);
 
-            /* add marker to map */
-            layer.addMarker(marker);
-            console.log("Added " + entry['title'] + " index: " + idx);
+        /* add marker to map */
+        layer.addMarker(marker);
+        console.log("Added " + entry['title'] + " index: " + idx);
 
     });
 
