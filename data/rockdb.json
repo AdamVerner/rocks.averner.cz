@@ -159,6 +159,28 @@
           "Thumbnail": "https://www.zonerama.com/photos/232150325_150x120_16.jpg"
         }
       ]
+    },
+    {
+      "Name": "Na Strašidlech",
+      "Coords": {
+        "x": 12.7499742490387,
+        "y": 50.401753919788554
+      },
+      "Page": "/pages/na_strasidlech.html",
+      "Pictures": [
+        {
+          "Source": "https://www.zonerama.com/photos/264100349_687x916_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/264100349_112x150_16.jpg"
+        },
+        {
+          "Source": "https://www.zonerama.com/photos/264100350_687x916_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/264100350_112x150_16.jpg"
+        },
+        {
+          "Source": "https://www.zonerama.com/photos/264100352_687x916_16.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/264100352_112x150_16.jpg"
+        }
+      ]
     }
   ]
 }
