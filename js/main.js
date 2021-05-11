@@ -29,7 +29,7 @@ function createMap(RockDB) {
         console.log('Loading stuff');
 
         const center = SMap.Coords.fromWGS84(14.41790, 50.12655);
-        const m = new SMap(JAK.gel("m"), center, 9);
+        const m = new SMap(JAK.gel("m"), center, 8);
         m.addDefaultLayer(SMap.DEF_SMART_BASE).enable();
         m.addDefaultControls();
 

@@ -169,16 +169,19 @@
       "Page": "/pages/na_strasidlech.html",
       "Pictures": [
         {
-          "Source": "https://www.zonerama.com/photos/264100349_687x916_16.jpg",
-          "Thumbnail": "https://www.zonerama.com/photos/264100349_112x150_16.jpg"
+          "Zonerama": "https://www.zonerama.com/AVerner/Photo/7233792/264100349",
+          "Thumbnail": "https://www.zonerama.com/photos/264100349_150x84.jpg",
+          "Source": "https://www.zonerama.com/photos/264100349_960x540.jpg"
         },
         {
-          "Source": "https://www.zonerama.com/photos/264100350_687x916_16.jpg",
-          "Thumbnail": "https://www.zonerama.com/photos/264100350_112x150_16.jpg"
+          "Zonerama": "https://www.zonerama.com/AVerner/Photo/7233792/264100350",
+          "Source": "https://www.zonerama.com/photos/264100350_2048x1494.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/264100350_150x109.jpg"
         },
         {
-          "Source": "https://www.zonerama.com/photos/264100352_687x916_16.jpg",
-          "Thumbnail": "https://www.zonerama.com/photos/264100352_112x150_16.jpg"
+          "Zonerama": "https://www.zonerama.com/AVerner/Photo/7233792/264100352",
+          "Source": "https://www.zonerama.com/photos/264100352_1536x2048.jpg",
+          "Thumbnail": "https://www.zonerama.com/photos/264100352_112x150.jpg"
         }
       ]
     },
@@ -191,6 +194,7 @@
       "Page": "/pages/suche_skaly.html",
       "Pictures": [
         {
+          "Zonerama": "https://www.zonerama.com/AVerner/Photo/7233792/264166718",
           "Thumbnail": "https://www.zonerama.com/photos/264166718_150x112.jpg",
           "Source": "https://www.zonerama.com/photos/264166718_1280x957.jpg"
         }
