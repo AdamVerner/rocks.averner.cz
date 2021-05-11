@@ -181,6 +181,20 @@
           "Thumbnail": "https://www.zonerama.com/photos/264100352_112x150_16.jpg"
         }
       ]
+    },
+    {
+      "Name": "Suché skály",
+      "Coords": {
+        "x": 15.211861251029973,
+        "y": 50.636774274697714
+      },
+      "Page": "/pages/suche_skaly.html",
+      "Pictures": [
+        {
+          "Thumbnail": "https://www.zonerama.com/photos/264166718_150x112.jpg",
+          "Source": "https://www.zonerama.com/photos/264166718_1280x957.jpg"
+        }
+      ]
     }
   ]
 }
