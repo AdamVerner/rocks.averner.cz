@@ -1,0 +1,145 @@
+import json
+import re
+from dataclasses import dataclass, asdict
+from typing import List
+
+import requests
+from bs4 import BeautifulSoup
+
+with open('./database.json', 'w'):
+    pass
+
+with open('./database.json', 'r') as data:
+    db = json.loads(data.read() or '{}')
+
+
+def get_data(link: str) -> str:
+    # create cache if it does not exist
+    with open('./cache.json', 'a'):
+        pass
+
+    # load and check cache
+    with open('./cache.json', 'r') as cache_file:
+        cache_data = json.loads(cache_file.read() or '{}')
+        if link in cache_data:
+            return cache_data[link]
+
+    # load data from link
+    r = requests.get(link, headers={'Accept': '*/*', 'User-Agent': 'curl/8.0.1'})
+    assert r.status_code == 200
+
+    # decode and save to cache
+    cache_data[link] = raw_data = r.content.decode('utf-8')
+
+    # save cache to disk
+    with open('./cache.json', 'w') as cache_file:
+        json.dump(cache_data, fp=cache_file)
+
+    return raw_data
+
+
+@dataclass
+class EntryInformation:
+    name: str
+    rock: str
+    sector: str
+
+    description: str
+    grade: str
+
+    link: str
+
+    lat: int
+    long: int
+
+    user_tags: List[str]
+    user_note: str
+
+
+def add_skalnioblasti_entry(cesta_link: str, tags: List[str], note: str):
+    # first find info about "rock" - "route" does not have a gps coordinate
+    assert 'cesta_id' in cesta_link
+    cesta_data = get_data(cesta_link)
+
+    match_skala = re.search(r'href="(.*skala_id=\d+)"', cesta_data)
+    assert match_skala, 'could not find skala_id in the page, maybe skalnioblasti changed their API...'
+    skala_link = match_skala.group(1)
+    skala_data = get_data(f'https://www.skalnioblasti.cz/{skala_link}')
+
+    # I believe the id parameter corresponds to skala_id, but one more request will not hurt anyone...
+    match_mapa = re.search(r'iframe src="(seznam\/mapa\.asp\?id=(\d*))"', skala_data)
+    assert match_mapa, 'could not find link to map, maybe skalnioblasti changed their API...'
+    mapa_link = match_mapa.group(1)
+    mapa_data = get_data(f'https://www.skalnioblasti.cz/{mapa_link}')
+
+    match_coords = re.search(r'fromWGS84\((\d+\.\d+), \n?(\d+\.\d+)\);', mapa_data)
+    lat, long = match_coords.group(2), match_coords.group(1)
+
+    match_name = re.search(r'<font style="font-size: 2[20]px;">(.*)<\/font>', cesta_data)
+    name = match_name.group(1)
+
+    match_skala_name = re.search(r'<span class="db_nadpis(_\d)?">(.*)<\/span>', skala_data)
+    skala_name = match_skala_name.group(2)
+
+    match_sector_name = re.search(
+        r'<a href="5_index\.asp\?cmd=6&sektor_id=\d+(&var=ps)?" class=lezec1>(?!<|sektor)(.*)</a>',
+        skala_data
+    )
+    sector_name = match_sector_name.group(2)
+
+    # parsing description is slightly more shitty...
+    soup = BeautifulSoup(cesta_data, 'html.parser')
+    desc = soup.find(string='popis:').parent.find_next_sibling()
+    description = desc.decode_contents()
+    # ideally we should parse the stuff in there, ...
+    #
+
+    match_grade = re.search(r'<strong>(.*)<\/strong>', cesta_data)
+    grade = match_grade.group(1)
+
+    print(f'{name} ({skala_name})', lat, long)
+
+    return EntryInformation(
+        name=name, rock=skala_name, sector=sector_name, link=cesta_link, lat=lat, long=long, description=description,
+        grade=grade,
+        user_note=note, user_tags=tags
+    )
+
+
+def add_entry(link: str, tags: List[str], note: str):
+    if 'www.skalnioblasti.cz' in link:
+        entry = add_skalnioblasti_entry(link, tags, note)
+    else:
+        raise NotImplementedError()
+
+    db.setdefault('entries', [])
+    if not len(list(filter(lambda x: x.get('link', None) == link, db['entries']))):
+        db['entries'].append(asdict(entry))
+
+
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12581', ['crack'], note='')
+add_entry('https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=13900', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12712', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12673', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12276', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=13470', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=5742', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=5737', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=84855', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=10975', ['crack'], note='')
+add_entry('https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=20401', ['crack'], note='')
+add_entry('https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=20411', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=59874', ['crack'], note='')
+# add_entry('', ['crack'], note='')
+
+with open('database.json', 'w') as database:
+    json.dump(db, database, indent=2)
+
+with open('export.gpx', 'w') as export:
+    export.write('<?xml version="1.0" encoding="utf-8"?>\n')
+    export.write('<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="https://mapy.cz/">\n')
+    for e in db['entries']:
+        export.write(f'''    <wpt lat="{e['lat']}" lon="{e['long']}">\n''')
+        export.write(f'''        <name>{e['grade']} - {e['name']} ({e['rock']})</name>\n''')
+        export.write(f'''    </wpt>\n''')
+    export.write('</gpx>\n')
