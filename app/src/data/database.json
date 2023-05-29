@@ -1,159 +1,535 @@
 {
   "entries": [
     {
-      "name": "\u00daZK\u00c1 SP\u00c1RA",
-      "rock": "OTTOVY V\u011a\u017dE",
+      "name": "\u00dazk\u00e1 Sp\u00e1ra",
+      "rock": "Ottovy V\u011b\u017ee",
       "sector": "Centr\u00e1ln\u00ed Skal\u00e1k",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12581",
       "description": "\n<strong>VII</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t12.\r\n\t\t\t\t\t\t\t7.\r\n\t\t\t\t\t\t\t1942,\r\n\t\t\t\t\t\t\tJosef Sm\u00edtka, Ladislav Vodh\u00e1n\u011bl(1), Vladim\u00edr Proch\u00e1zka, L. Lhot\u00e1k.\r\n\t\t\t\t\t\t\tV prav\u00e9 \u010d\u00e1sti JV st\u011bny koutovou sp\u00e1rou pod  p\u0159evis (vlevo kruh). Ru\u010dn\u00ed sp\u00e1rou na vrchol.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6- (UIAA), VIIa (sask\u00e1), 5c (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<img alt=\"\" border=\"1\" height=\"30\" src=\"mobile/images/icoX4a.jpg\" width=\"30\"/>\n<div style=\"height:10px; width:10px;\"></div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=9800\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Vladim\u00edr\u00a0Proch\u00e1zka</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=10468\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Josef\u00a0Sm\u00edtka</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=11541\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Ladislav\u00a0Vodh\u00e1n\u011bl(1)</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=8536\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">L.\u00a0Lhot\u00e1k</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "VII",
-      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12581",
-      "lat": "50.5563469444444",
-      "long": "15.1780152777778",
-      "user_tags": ["crack"],
+      "lat": 50.5563469444444,
+      "long": 15.1780152777778,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "NANEBEVSTOUPEN\u00cd",
-      "rock": "MINISTRANT - M",
+      "name": "Nanebevstoupen\u00ed",
+      "rock": "Ministrant - M",
       "sector": "Centr\u00e1ln\u00ed Skal\u00e1k",
+      "link": "https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=13900",
       "description": "\n<strong>VIIc</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<strong>VIII</strong>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\u00a0RP\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t30.\r\n\t\t\t\t\t\t\t6.\r\n\t\t\t\t\t\t\t1987,\r\n\t\t\t\t\t\t\tVladim\u00edr Hoffman st\u0159. Petr Hejtm\u00e1nek.\r\n\t\t\t\t\t\t\t\u00dazkou sp\u00e1rou p\u0159es kruh na temeno.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t7 (UIAA), VIIIb (sask\u00e1), 6b+ (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=7091\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Vladim\u00edr\u00a0Hoffman</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=1277\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Petr\u00a0Hejtm\u00e1nek</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "VIIc",
-      "link": "https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=13900",
-      "lat": "50.548375",
-      "long": "15.1917411111111",
-      "user_tags": ["crack"],
+      "lat": 50.548375,
+      "long": 15.1917411111111,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "SED\u0158EN\u00dd RUCE",
-      "rock": "LIBERECK\u00c1 V\u011a\u017d",
+      "name": "Sed\u0159en\u00fd Ruce",
+      "rock": "Libereck\u00e1 V\u011b\u017e",
       "sector": "Centr\u00e1ln\u00ed Skal\u00e1k",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12712",
       "description": "\n<strong>VIIc</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<strong>VIII</strong>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\u00a0RP\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t14.\r\n\t\t\t\t\t\t\t8.\r\n\t\t\t\t\t\t\t1983,\r\n\t\t\t\t\t\t\tRoman Balek st\u0159. Petr Binh\u00e1k, F. Siv\u010d\u00e1k, Karel Barth.\r\n\t\t\t\t\t\t\tPravou sp\u00e1rou a st\u011bnou (kruh) ke kruhu \"N.C.\". Tou na vrchol.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t7 (UIAA), VIIIb (sask\u00e1), 6b+ (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<img alt=\"\" border=\"1\" height=\"30\" src=\"mobile/images/icoX10a.jpg\" width=\"30\"/>\n<img alt=\"\" border=\"1\" height=\"30\" src=\"mobile/images/icoX6a.jpg\" width=\"30\"/>\n<img alt=\"\" border=\"1\" height=\"30\" src=\"mobile/images/icoX12a.jpg\" width=\"30\"/>\n<img alt=\"\" border=\"1\" height=\"30\" src=\"mobile/images/icoX4a.jpg\" width=\"30\"/>\n<div style=\"height:10px; width:10px;\"></div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=5465\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Roman\u00a0Balek</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=5656\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Petr\u00a0Binh\u00e1k</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=5485\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Karel\u00a0Barth</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=10401\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">F.\u00a0Siv\u010d\u00e1k</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "VIIc",
-      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12712",
-      "lat": "50.5482513888889",
-      "long": "15.1926052777778",
-      "user_tags": ["crack"],
+      "lat": 50.5482513888889,
+      "long": 15.1926052777778,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "P\u0158\u00c1TELSK\u00c1 CESTA",
-      "rock": "LIBERECK\u00c1 V\u011a\u017d",
+      "name": "P\u0159\u00e1telsk\u00e1 Cesta",
+      "rock": "Libereck\u00e1 V\u011b\u017e",
       "sector": "Centr\u00e1ln\u00ed Skal\u00e1k",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12673",
       "description": "\n<strong>VIIb</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t24.\r\n\t\t\t\t\t\t\t5.\r\n\t\t\t\t\t\t\t1959,\r\n\t\t\t\t\t\t\tJaroslav Kr\u0148\u00e1k, Josef Hendrych(2).\r\n\t\t\t\t\t\t\tLevou sp\u00e1rou do jesky\u0148ky, sokol\u00edkem ke kruhu a sp\u00e1rou.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6+/7- (UIAA), VIIc (sask\u00e1), 6a (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=2298\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Jaroslav\u00a0Kr\u0148\u00e1k</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=23561\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Josef\u00a0Hendrych(2)</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "VIIb",
-      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12673",
-      "lat": "50.5482513888889",
-      "long": "15.1926052777778",
-      "user_tags": ["crack"],
+      "lat": 50.5482513888889,
+      "long": 15.1926052777778,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "NORM\u00c1LN\u00cd CESTA",
-      "rock": "KNIHA",
+      "name": "Norm\u00e1ln\u00ed Cesta",
+      "rock": "Kniha",
       "sector": "Centr\u00e1ln\u00ed Skal\u00e1k",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12276",
       "description": "\n<strong>V</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t10.\r\n\t\t\t\t\t\t\t7.\r\n\t\t\t\t\t\t\t1927,\r\n\t\t\t\t\t\t\tMartin Hoffmann, Alfred Herrmann.\r\n\t\t\t\t\t\t\tOd V na p\u0159edskal\u00ed pod SV st\u011bnou. Sestup \u0161ikmo vpravo k po\u010d\u00e1tku koutov\u00e9 sp\u00e1ry (hodiny) a tou p\u0159es 2 kruhy na vrchol.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t4+ (UIAA), V (sask\u00e1), 4 (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=7095\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Martin\u00a0Hoffmann</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=13019\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Alfred\u00a0Herrmann</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "V",
-      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12276",
-      "lat": "50.5469622222222",
-      "long": "15.1957697222222",
-      "user_tags": ["crack"],
+      "lat": 50.5469622222222,
+      "long": 15.1957697222222,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "NETOP\u00dd\u0158\u00cd SP\u00c1RA",
-      "rock": "MNICH",
+      "name": "Netop\u00fd\u0159\u00ed Sp\u00e1ra",
+      "rock": "Mnich",
       "sector": "Centr\u00e1ln\u00ed Skal\u00e1k",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=13470",
       "description": "\n<strong>VI</strong>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\u00a0RP\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t2.\r\n\t\t\t\t\t\t\t8.\r\n\t\t\t\t\t\t\t1941,\r\n\t\t\t\t\t\t\tZden\u011bk M\u00e9zl, Karel \u010cabelka.\r\n\t\t\t\t\t\t\tSp\u00e1rou ve  st\u0159edu n\u00e1horn\u00ed st\u011bny p\u0159es kruh na vrchol.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t5 (UIAA), VI (sask\u00e1), 5a (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<img alt=\"\" border=\"1\" height=\"30\" src=\"mobile/images/icoX13a.jpg\" width=\"30\"/>\n<img alt=\"\" border=\"1\" height=\"30\" src=\"mobile/images/icoX16a.jpg\" width=\"30\"/>\n<img alt=\"\" border=\"1\" height=\"30\" src=\"mobile/images/icoX12a.jpg\" width=\"30\"/>\n<div style=\"height:10px; width:10px;\"></div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=8967\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Zden\u011bk\u00a0M\u00e9zl</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=545\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Karel\u00a0\u010cabelka</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "VI",
-      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=13470",
-      "lat": "50.5565516666667",
-      "long": "15.1760186111111",
-      "user_tags": ["crack"],
+      "lat": 50.5565516666667,
+      "long": 15.1760186111111,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "\u0160AVLE",
-      "rock": "B\u00cdL\u00c1 V\u011a\u017d - M",
-      "sector": "Such\u00e9 sk\u00e1ly",
+      "name": "\u0160avle",
+      "rock": "B\u00edl\u00e1 V\u011b\u017e - M",
+      "sector": "Such\u00e9 Sk\u00e1ly",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=5742",
       "description": "\n<strong>VII</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t.\r\n\t\t\t\t\t\t\tVlevo od JZ hrany vzh\u016fru p\u0159es stupn\u011b na polici pod v\u00fdraznou obloukovitou sp\u00e1ru ke kruhu. Sp\u00e1rou na konec a p\u0159es stupn\u011b.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6- (UIAA), VIIa (sask\u00e1), 5c (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n",
       "grade": "VII",
-      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=5742",
-      "lat": "50.638116",
-      "long": "15.2084094",
-      "user_tags": ["crack"],
+      "lat": 50.638116,
+      "long": 15.2084094,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "\u00daDOLN\u00cd SP\u00c1RA",
-      "rock": "KOSTKA - M",
-      "sector": "Such\u00e9 sk\u00e1ly",
+      "name": "\u00dadoln\u00ed Sp\u00e1ra",
+      "rock": "Kostka - M",
+      "sector": "Such\u00e9 Sk\u00e1ly",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=5737",
       "description": "\n<strong>VIIb</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t1964,\r\n\t\t\t\t\t\t\tJosef \u010cihula, K. Philipp.\r\n\t\t\t\t\t\t\tKom\u00ednkem na p\u0159edskal\u00ed, \u0161ikmo doprava p\u0159es hranu ke kruhu pod \u0161irokou sp\u00e1rou a tou.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6+/7- (UIAA), VIIc (sask\u00e1), 6a (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=6109\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Josef\u00a0\u010cihula</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=9594\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">K.\u00a0Philipp</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "VIIb",
-      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=5737",
-      "lat": "50.6379036111111",
-      "long": "15.2089322222222",
-      "user_tags": ["crack"],
+      "lat": 50.6379036111111,
+      "long": 15.2089322222222,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "CESTA BOJOVN\u00cdKA",
-      "rock": "SAMURAJ - M",
-      "sector": "Labsk\u00e9 \u00fadol\u00ed - lev\u00fd b\u0159eh",
+      "name": "Cesta Bojovn\u00edka",
+      "rock": "Samuraj - M",
+      "sector": "Labsk\u00e9 \u00dadol\u00ed - Lev\u00fd B\u0159eh",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=84855",
       "description": "\n<strong>VIIIb</strong>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\u00a0RP\t\r\n\t\t\t\t\t\t\t\t(P\u00edsk.Sasko),\r\n\t\t\t\t\t\t\t\t22.\r\n\t\t\t\t\t\t\t7.\r\n\t\t\t\t\t\t\t2014,\r\n\t\t\t\t\t\t\tRichard Litochleb(1) st\u0159. Richard Litochleb(2).\r\n\t\t\t\t\t\t\tSt\u0159edem st\u011bny trhlinou a v\u00fd\u0161e sp\u00e1rou a kom\u00ednem p\u0159es 4 borh\u00e1ky. ke slan. BH.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t7 (UIAA), 6b+ (francouzsk\u00e1), \r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=22244\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Richard\u00a0Litochleb(2)</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=25452\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Richard\u00a0Litochleb(1)</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "VIIIb",
-      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=84855",
-      "lat": "50.8298833",
-      "long": "14.2205",
-      "user_tags": ["crack"],
+      "lat": 50.8298833,
+      "long": 14.2205,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "BI\u010c",
-      "rock": "DR\u00c1\u017d\u010eANSK\u00c1 V\u011a\u017d (PAVL\u00cdKOVA V\u011a\u017d)",
-      "sector": "Prachovsk\u00e9 sk\u00e1ly - centr\u00e1l",
+      "name": "Bi\u010d",
+      "rock": "Dr\u00e1\u017e\u010fansk\u00e1 V\u011b\u017e (Pavl\u00edkova V\u011b\u017e)",
+      "sector": "Prachovsk\u00e9 Sk\u00e1ly - Centr\u00e1l",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=10975",
       "description": "\n<strong>VII</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t12.\r\n\t\t\t\t\t\t\t6.\r\n\t\t\t\t\t\t\t1951,\r\n\t\t\t\t\t\t\tVladim\u00edr Hale\u0161(1), Anton\u00edn Fu\u010d\u00edk.\r\n\t\t\t\t\t\t\tSt\u0159edem ji\u017en\u00ed st\u011bny sokol\u00edkem k 1. kruhu, sp\u00e1rou st\u00e1\u010dej\u00edc\u00ed se vpravo p\u0159es 3 kruhy do v\u00fdklenku (p\u00e1t\u00fd kruh), sp\u00e1rou a kom\u00ednem vzh\u016fru.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6- (UIAA), VIIa (sask\u00e1), 5c (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=977\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Anton\u00edn\u00a0Fu\u010d\u00edk</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=1163\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Vladim\u00edr\u00a0Hale\u0161(1)</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "VII",
-      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=10975",
-      "lat": "50.4669719444444",
-      "long": "15.2914438888889",
-      "user_tags": ["crack"],
+      "lat": 50.4669719444444,
+      "long": 15.2914438888889,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "CESTA N\u00c1MO\u0158N\u00cd P\u011aCHOTY",
-      "rock": "INDI\u00c1NKA (JUBILEJN\u00cd V\u011a\u017d)",
-      "sector": "Labsk\u00e9 \u00fadol\u00ed - lev\u00fd b\u0159eh",
+      "name": "Cesta N\u00e1mo\u0159n\u00ed P\u011bchoty",
+      "rock": "Indi\u00e1nka (Jubilejn\u00ed V\u011b\u017e)",
+      "sector": "Labsk\u00e9 \u00dadol\u00ed - Lev\u00fd B\u0159eh",
+      "link": "https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=20401",
       "description": "\n<strong>VIIb</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(P\u00edsk.Sasko),\r\n\t\t\t\t\t\t\t\t29.\r\n\t\t\t\t\t\t\t6.\r\n\t\t\t\t\t\t\t1978,\r\n\t\t\t\t\t\t\tZden\u011bk Weingartl, Pavel Weingartl.\r\n\t\t\t\t\t\t\tSp\u00e1rou a koutem v SZ st\u011bn\u011b k 1. K. Sp\u00e1rou na jej\u00ed konec a traverz doprava ke 2. K. Sokol\u00edkov\u00fdm z\u00e1\u0159ezem \u0161ikmo doprava na vrchol.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6 (UIAA), 5c (francouzsk\u00e1), \r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=11728\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Zden\u011bk\u00a0Weingartl</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=11727\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Pavel\u00a0Weingartl</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "VIIb",
-      "link": "https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=20401",
-      "lat": "50.8389115",
-      "long": "14.2154878",
-      "user_tags": ["crack"],
+      "lat": 50.8389115,
+      "long": 14.2154878,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "INDI\u00c1N KR\u00c1K",
-      "rock": "INDI\u00c1NKA (JUBILEJN\u00cd V\u011a\u017d)",
-      "sector": "Labsk\u00e9 \u00fadol\u00ed - lev\u00fd b\u0159eh",
+      "name": "Indi\u00e1n Kr\u00e1k",
+      "rock": "Indi\u00e1nka (Jubilejn\u00ed V\u011b\u017e)",
+      "sector": "Labsk\u00e9 \u00dadol\u00ed - Lev\u00fd B\u0159eh",
+      "link": "https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=20411",
       "description": "\n<strong>VIIIb</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(P\u00edsk.Sasko),\r\n\t\t\t\t\t\t\t\t10.\r\n\t\t\t\t\t\t\t6.\r\n\t\t\t\t\t\t\t1995,\r\n\t\t\t\t\t\t\tPetr Slanina(2), Ji\u0159\u00ed Slav\u00edk.\r\n\t\t\t\t\t\t\tKr\u00e1tce jako N\u00e1vrat k romantice a levou trhlinou p\u0159es 2 kruhy pod p\u0159evis. Jako \u201eTee Pee\u201c na vrchol. \r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t7 (UIAA), 6b+ (francouzsk\u00e1), \r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=4158\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Ji\u0159\u00ed\u00a0Slav\u00edk</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=4132\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Petr\u00a0Slanina(2)</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "VIIIb",
-      "link": "https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=20411",
-      "lat": "50.8389115",
-      "long": "14.2154878",
-      "user_tags": ["crack"],
+      "lat": 50.8389115,
+      "long": 14.2154878,
+      "user_tags": [
+        "crack"
+      ],
       "user_note": ""
     },
     {
-      "name": "SUPOV\u00c9 MEXIKA",
-      "rock": "SIERRA MADRE - M",
-      "sector": "Labsk\u00e9 \u00fadol\u00ed - lev\u00fd b\u0159eh",
+      "name": "Supov\u00e9 Mexika",
+      "rock": "Sierra Madre - M",
+      "sector": "Labsk\u00e9 \u00dadol\u00ed - Lev\u00fd B\u0159eh",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=59874",
       "description": "\n<strong>VIIIb</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(P\u00edsk.Sasko),\r\n\t\t\t\t\t\t\t\t28.\r\n\t\t\t\t\t\t\t5.\r\n\t\t\t\t\t\t\t2005,\r\n\t\t\t\t\t\t\tPavel \u010cern\u00fd(2), Richard Litochleb(1).\r\n\t\t\t\t\t\t\tZ police na n\u00e1stupu \u201eStar\u00e9 cesty\u201c na Indi\u00e1nku vpravo sokol\u00edkovou trhlinou (1. borh\u00e1k) na balkon a vlevo kr\u00e1tce kom\u00ednem (2. borh\u00e1k). St\u011bnou pod\u00e9l trhliny (3. BH) na polici a st\u011bnou p\u0159es K a 4. BH na druhou polici. Tupou hranou p\u0159es 5. borh\u00e1k ke sla\u0148ovac\u00edmu borh\u00e1ku.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t7 (UIAA), 6b+ (francouzsk\u00e1), \r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=622\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Pavel\u00a0\u010cern\u00fd(2)</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=25452\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Richard\u00a0Litochleb(1)</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
       "grade": "VIIIb",
-      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=59874",
-      "lat": "50.8388472",
-      "long": "14.2148495",
-      "user_tags": ["crack"],
+      "lat": 50.8388472,
+      "long": 14.2148495,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Sp\u00e1ra",
+      "rock": "Parav\u00e1n",
+      "sector": "Teplick\u00e9 Sk\u00e1ly",
+      "link": "https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=22617",
+      "description": "\n<strong>6</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(UIAA),\r\n\t\t\t\t\t\t\t\t1.\r\n\t\t\t\t\t\t\t8.\r\n\t\t\t\t\t\t\t1971,\r\n\t\t\t\t\t\t\tVladim\u00edr Arno\u0161t, Anton\u00edn Umlauf.\r\n\t\t\t\t\t\t\t\u00dad. sp\u00e1rou (2 kruhy) n.t.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t5c (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=14446\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Vladim\u00edr\u00a0Arno\u0161t</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=11342\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Anton\u00edn\u00a0Umlauf</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
+      "grade": "6",
+      "lat": 50.5916944444,
+      "long": 16.1298055556,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "\u00dadoln\u00ed",
+      "rock": "Hl\u00e1ska",
+      "sector": "Teplick\u00e9 sk\u00e1ly",
+      "link": "https://www.horosvaz.cz/skaly-cesta-21127/",
+      "description": "kl. UIAA 7Pod Z hranou koutovou sp\u00e1rou na pil\u00ed\u0159ek. St\u011bnou dol. a sp\u00e1rou (6 kruh\u016f) n. v. \n Old\u0159ich Kopal, K. Cerman, M. \u0160im\u016fnek, F. \u010cepelka, V. Fulka, 5.7.1956",
+      "grade": "7(UIAA)",
+      "lat": 50.5923333333,
+      "long": 16.1263611111,
+      "user_tags": [
+        "offwidth"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "\u017dlut\u00e9 st\u00edny",
+      "rock": "\u00dazk\u00e1 nezn\u00e1m\u00e1",
+      "sector": "Hruboskalsko centrum",
+      "link": "https://www.horosvaz.cz/skaly-cesta-36584/",
+      "description": "Ru\u010dn\u00ed sp\u00e1rou na konec, vlevo do kr\u00e1tk\u00e9 \u017elut\u011b zbarven\u00e9 sp\u00e1ry, j\u00ed a\u017e na hranu, kde zat\u00e1\u010d\u00ed p\u0159es p\u0159evis a vpravo k 1. kruhu. \u0160ikmo vlevo l\u00e1mavou st\u011bnou ke 2. kruhu a zleva hladkou st\u011bnou na vrchol. \n V. Sochor, J. Sochor, Z. \u017dofka, K. Adami\u010dko, 27.8.1972",
+      "grade": "VIII(P\u00edskovec \u010cR)",
+      "lat": 50.5474969,
+      "long": 15.1940783,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Kou\u0159ov\u00e1 st\u011bna",
+      "rock": "Daliborka",
+      "sector": "Hruboskalsko centrum",
+      "link": "https://www.horosvaz.cz/skaly-cesta-32059/",
+      "description": "Sp\u00e1rou pod charakteristickou vydutinu, doleva k \u0161ikm\u00e9 sp\u00e1rce a d\u00e1le k 1. kruhu. (Postaven\u00edm) na plo\u0161inku a koutem pod\u00e9l sp\u00e1ry ke 2. kruhu. Vzh\u016fru a traver vlevo k po\u010d\u00e1tku \u0161irok\u00e9 sp\u00e1ry. Tou na vrchol. \r\n\r\n\n\nL. Vodh\u00e1n\u011bl - J. Jank\u016f (1954): Sp\u00e1rkou, kter\u00e1 rozd\u011bluje m\u00edrn\u011b naklon\u011bnou severov\u00fdchodn\u00ed st\u011bnu, stoup\u00e1me pod p\u0159evis (jist\u00edc\u00ed uzel). Nyn\u00ed krajn\u011b obt\u00ed\u017en\u011b p\u0159ech\u00e1z\u00edme doleva s pou\u017eit\u00edm nepatrn\u00fdch chyt\u016f ke kruhu. P\u0159echod ke kruhu je kl\u00ed\u010dem ke st\u011bn\u011b. Po p\u0159ekon\u00e1n\u00ed hladk\u00e9 st\u011bny nad kruhem postupujeme st\u00e1le pod\u00e9l ostr\u00e9ho z\u00e1\u0159ezu vzh\u016fru na \u00fazkou plo\u0161inku (jist\u00edc\u00ed smy\u010dka) a d\u00e1le pod\u00e9l \u00fazk\u00e9 koutov\u00e9 sp\u00e1rky ke druh\u00e9mu kruhu. Od n\u011bho pokra\u010dujeme v\u00fd\u0161e na mal\u00fd balkonek v horn\u00ed \u010d\u00e1sti st\u011bny, kde prolezeme vodorovn\u00fdm tunelem doleva do sp\u00e1ry a touto sp\u00e1rou zakon\u010d\u00edme v\u00fdstup. \n \n Josef Smitka, L. Vodh\u00e1n\u011bl, 5.9.1942",
+      "grade": "VIIb, RP\u00a0VIIIc(P\u00edskovec \u010cR)",
+      "lat": 50.547,
+      "long": 15.1961388889,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "M\u00e9zlova sp\u00e1ra",
+      "rock": "Podmokelsk\u00e1",
+      "sector": "Hruboskalsko centrum",
+      "link": "https://www.horosvaz.cz/skaly-cesta-35113/",
+      "description": "Lev\u00fdm koutem do d\u00edry, p\u0159es p\u0159evis k 1. kruhu a sp\u00e1rou na polici\u00a0\u00a0(2. kruh). Doprava, \u00fazk\u00fdm kom\u00ednem (3. kruh), sp\u00e1rkou a vhlouben\u00edm na\u00a0\u00a0vrchol. \n Z. M\u00e9zl, K. \u010cabelka, O. Jel\u00ednek, 1943",
+      "grade": "VI(P\u00edskovec \u010cR)",
+      "lat": 50.5518333333,
+      "long": 15.1776388889,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Indi\u00e1n Kr\u00e1k",
+      "rock": "Indi\u00e1nka",
+      "sector": "7. Labsk\u00e9 \u00fadol\u00ed - lev\u00fd b\u0159eh",
+      "link": "https://www.horosvaz.cz/skaly-cesta-38927/",
+      "description": "Kr\u00e1tce jako N\u00e1vrat k romantice a levou trhlinou p\u0159es 2 K pod p\u0159evis. Jako \u201eTee Pee\u201c na vrchol. \n Petr Slanina a Ji\u0159\u00ed Slav\u00edk, 10.6.1995",
+      "grade": "RP\u00a0VIIIc(P\u00edskovec Sasko)",
+      "lat": 50.8388667,
+      "long": 14.2154167,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Supov\u00e9 Mexika",
+      "rock": "Sierra madre",
+      "sector": "7. Labsk\u00e9 \u00fadol\u00ed - lev\u00fd b\u0159eh",
+      "link": "https://www.horosvaz.cz/skaly-cesta-59462/",
+      "description": "Z\u00a0police na n\u00e1stupu \u201eStar\u00e9 cesty\u201c na Indi\u00e1nku vpravo sokol\u00edkovou trhlinou (1.BH) na balkon a vlevo kr\u00e1tce kom\u00ednem (2.BH). St\u011bnou pod\u00e9l trhliny (3.BH) na polici a st\u011bnou p\u0159es K a 4.BH na druhou polici. Tupou hranou p\u0159es 5.BH ke sla\u0148. BH. \n Pavel \u010cern\u00fd a Richard Litochleb, 28.5.2005",
+      "grade": "RP\u00a0VIIIc(P\u00edskovec Sasko)",
+      "lat": 50.8388055556,
+      "long": 14.2150277778,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Cesta n\u00e1mo\u0159n\u00ed p\u011bchoty",
+      "rock": "Indi\u00e1nka",
+      "sector": "7. Labsk\u00e9 \u00fadol\u00ed - lev\u00fd b\u0159eh",
+      "link": "https://www.horosvaz.cz/skaly-cesta-38936/",
+      "description": "Sp\u00e1rou a koutem v\u00a0SZ st\u011bn\u011b k\u00a01.K. Sp\u00e1rou na jej\u00ed konec a traverz doprava ke 2.K. Sokol\u00edkov\u00fdm z\u00e1\u0159ezem \u0161ikmo doprava na vrchol. \n Zden\u011bk Weingartl a Pavel Weingartl, 29.6.1978",
+      "grade": "RP\u00a0VIIc(P\u00edskovec Sasko)",
+      "lat": 50.8388667,
+      "long": 14.2154167,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "\u010cihulovy sokol\u00edky",
+      "rock": "Rektorka - v\u00fdchodn\u00ed v\u011b\u017e",
+      "sector": "Prachovsk\u00e9 sk\u00e1ly",
+      "link": "https://www.horosvaz.cz/skaly-cesta-11053/",
+      "description": "Od severov\u00fdchodn\u00ed hrany \u0161ikmo vpravo k prvn\u00edmu kruhu, sokol\u00edky vlevo na balk\u00f3nek (hodiny), sp\u00e1rou na konec (druh\u00fd kruh), doleva do v\u00fdchodn\u00ed st\u011bny a j\u00ed (t\u0159et\u00ed kruh). N\u00e1stup t\u00e9\u017e ze Cvi\u010dn\u00e9ho kom\u00edna a traverz k prvn\u00edmu kruhu. (1969, Mocek, Cajth\u00e1ml) \n Josef \u010cihula a Franti\u0161ek Kroupa, 8.9.1958",
+      "grade": "VIIc(P\u00edskovec \u010cR)",
+      "lat": 50.4669166667,
+      "long": 15.2880833333,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Jiskra nad\u011bje",
+      "rock": "Proton",
+      "sector": "6. Labsk\u00e9 \u00fadol\u00ed - prav\u00fd b\u0159eh",
+      "link": "https://www.horosvaz.cz/skaly-cesta-40798/",
+      "description": "V\u00a0lev\u00e9 \u010d\u00e1sti \u00fadoln\u00ed st\u011bny koutovou sp\u00e1rou p\u0159es dva p\u0159evisy na vrchol. \n Miroslav Michl\u00edk, L. \u010cern\u00fd, 31.8.1982",
+      "grade": "RP\u00a0VIIc(P\u00edskovec Sasko)",
+      "lat": 50.8462777778,
+      "long": 14.2209444444,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Zelen\u00fd Raoul",
+      "rock": "Indi\u00e1nka",
+      "sector": "7. Labsk\u00e9 \u00fadol\u00ed - lev\u00fd b\u0159eh",
+      "link": "https://www.horosvaz.cz/skaly-cesta-38935/",
+      "description": "Vlevo od \u201eCesty n\u00e1mo\u0159n\u00ed p\u011bchoty\u201c st\u011bnou p\u0159es 5 BH ke 2.K cesty \u201eTropick\u00e1 hrana\u201c. Tou na vrchol. \n Tom\u00e1\u0161 Sobotka, O. Bene\u0161, 2001",
+      "grade": "RP\u00a0VIIIc(P\u00edskovec Sasko)",
+      "lat": 50.8388667,
+      "long": 14.2154167,
+      "user_tags": [
+        "wall"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "\u00dadoln\u00ed",
+      "rock": "Amor",
+      "sector": "Adr\u0161pa\u0161sk\u00e9 sk\u00e1ly",
+      "link": "https://www.horosvaz.cz/skaly-cesta-25837/",
+      "description": "Z \u00fadoln\u00ed (SV) strany kom\u00ednem pod p\u0159evis a vlevo sp\u00e1rou (kruh) na vrchol. \n Fritz Fl\u00f6tgen a Herbert Richter, 20.6.1961",
+      "grade": "VIIa(P\u00edskovec Sasko)",
+      "lat": 50.6098469,
+      "long": 16.1139261,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Beru\u0161ky",
+      "rock": "Brusinka",
+      "sector": "Adr\u0161pa\u0161sk\u00e9 sk\u00e1ly",
+      "link": "https://www.horosvaz.cz/skaly-cesta-24737/",
+      "description": "V lev\u00e9 \u010d\u00e1sti SZ st\u011bny sp\u00e1rou, sokol\u00edkem (1. kruh) a sp\u00e1rou ke 2. kruhu. Vlevo st\u011bnou, \u017el\u00e1bkem a kom\u00ednem na vrchol. \n Stanislav Lukavsk\u00fd, I. Kobr, 10.9.1980",
+      "grade": "VIIIc(P\u00edskovec \u010cR)",
+      "lat": 50.6137083,
+      "long": 16.1200003,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Bi\u010d",
+      "rock": "V\u011b\u017e Jardy Berana",
+      "sector": "Teplick\u00e9 Sk\u00e1ly",
+      "link": "https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=23345",
+      "description": "\n<strong>6+</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(UIAA),\r\n\t\t\t\t\t\t\t\t18.\r\n\t\t\t\t\t\t\t6.\r\n\t\t\t\t\t\t\t1961,\r\n\t\t\t\t\t\t\tBohumil S\u00fdkora, Old\u0159ich Gult, Viktor Walzel, Jaroslav Str\u00e1nsk\u00fd.\r\n\t\t\t\t\t\t\tUprost\u0159ed Z st\u011bny v kout\u011b sokol\u00edkem (3 kruhy) pod p\u0159evis. Traverz v \u0159\u00edmse doleva, sp\u00e1rou a kom\u00ednem na p\u0159edvrchol. \u017dl\u00e1bkem na vrchol.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6a (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=1103\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Old\u0159ich\u00a0Gult</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=11700\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Viktor\u00a0Walzel</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=4291\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Jaroslav\u00a0Str\u00e1nsk\u00fd</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=20798\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Bohumil\u00a0S\u00fdkora</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
+      "grade": "6+",
+      "lat": 50.587805,
+      "long": 16.1205269444444,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Pr\u00e1sknut\u00ed Bi\u010dem",
+      "rock": "V\u011b\u017e Jardy Berana",
+      "sector": "Teplick\u00e9 Sk\u00e1ly",
+      "link": "https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=23346",
+      "description": "\n<strong>7+</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(UIAA),\r\n\t\t\t\t\t\t\t\t6.\r\n\t\t\t\t\t\t\t8.\r\n\t\t\t\t\t\t\t1972,\r\n\t\t\t\t\t\t\tMiroslav \u0160m\u00edd, Ladislav \u0160olc.\r\n\t\t\t\t\t\t\tNad 3. kruhem sp\u00e1rou p\u0159\u00edmo p\u0159es p\u0159evis (4. kruh) a st\u011bnou n.v.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6c (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=10920\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Miroslav\u00a0\u0160m\u00edd</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=10937\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Ladislav\u00a0\u0160olc</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
+      "grade": "7+",
+      "lat": 50.587805,
+      "long": 16.1205269444444,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "\u00dadoln\u00ed",
+      "rock": "Homole",
+      "sector": "Teplick\u00e9 Sk\u00e1ly",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=23121",
+      "description": "\n<strong>6+</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(UIAA),\r\n\t\t\t\t\t\t\t\t12.\r\n\t\t\t\t\t\t\t6.\r\n\t\t\t\t\t\t\t1962,\r\n\t\t\t\t\t\t\tHerbert Richter.\r\n\t\t\t\t\t\t\tZ tur. cesty pod p\u0159evisem sp\u00e1rou (kruh) na plo\u0161inku. St\u011bnou dopr. n.v. .\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6a (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=3748\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Herbert\u00a0Richter</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
+      "grade": "6+",
+      "lat": 50.5866661111111,
+      "long": 16.1202769444444,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Direttissima",
+      "rock": "Kanec",
+      "sector": "Teplick\u00e9 sk\u00e1ly",
+      "link": "https://www.horosvaz.cz/skaly-cesta-21456/",
+      "description": "kl. UIAA 6+Cestou \u010d. 3  ke kruhu. P\u0159ekrokem dopr. a sp\u00e1rou p\u0159es dva p\u0159evisy (2 kruhy) n. v. \n A. Rousek, Old\u0159ich Gult, 27.8.1967",
+      "grade": "6+(UIAA)",
+      "lat": 50.5864166667,
+      "long": 16.1201944444,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "\u017dabkov\u00e1",
+      "rock": "St\u0159\u00edbrn\u00e1",
+      "sector": "Teplick\u00e9 Sk\u00e1ly",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=23058",
+      "description": "\n<strong>6+</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(UIAA),\r\n\t\t\t\t\t\t\t\t26.\r\n\t\t\t\t\t\t\t6.\r\n\t\t\t\t\t\t\t1974,\r\n\t\t\t\t\t\t\tMiroslav \u0160m\u00edd, Ladislav \u0160olc.\r\n\t\t\t\t\t\t\tSp\u00e1rou v \u00fad. st\u011bn\u011b na pil\u00ed\u0159. Cestou \u010d.2 n.v.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6a (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=10920\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Miroslav\u00a0\u0160m\u00edd</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=10937\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Ladislav\u00a0\u0160olc</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
+      "grade": "6+",
+      "lat": 50.5871111111111,
+      "long": 16.121555,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Lepra",
+      "rock": "Srab",
+      "sector": "Adr\u0161pa\u0161sk\u00e9 Sk\u00e1ly",
+      "link": "https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=75778",
+      "description": "\n<strong>VIIa</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(P\u00edsk.Sasko),\r\n\t\t\t\t\t\t\t\t7.\r\n\t\t\t\t\t\t\t9.\r\n\t\t\t\t\t\t\t2006,\r\n\t\t\t\t\t\t\tPetr Mocek st\u0159. Stanislav Lukavsk\u00fd(1), Ivan Kobr, Miroslav Mach.\r\n\t\t\t\t\t\t\tU severn\u00ed hrany kom\u00ednkem a vlevo za hranu ke kruhu. Sp\u00e1rou (2. kruh) na temeno.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t5+ (UIAA), 5b (francouzsk\u00e1), \r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=9078\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Petr\u00a0Mocek</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=7878\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Ivan\u00a0Kobr</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=19448\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Miroslav\u00a0Mach</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=2665\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Stanislav\u00a0Lukavsk\u00fd(1)</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
+      "grade": "VIIa",
+      "lat": 50.6135833333,
+      "long": 16.1103888889,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Highway \u010c. 1",
+      "rock": "T\u0159i Sestry",
+      "sector": "Adr\u0161pa\u0161sk\u00e9 Sk\u00e1ly",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=75795",
+      "description": "\n<strong>VIIa</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(P\u00edsk.Sasko),\r\n\t\t\t\t\t\t\t\tPetr Waller, Josef Koudelka.\r\n\t\t\t\t\t\t\tZ meziv\u011b\u017e\u00ed levou sp\u00e1rou ( 2 kruhy) na pil\u00ed\u0159 (3. kruh) a vpravo po hran\u011b na vrchol.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t5+ (UIAA), 5b (francouzsk\u00e1), \r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=11686\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Petr\u00a0Waller</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=8066\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Josef\u00a0Koudelka</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
+      "grade": "VIIa",
+      "lat": 50.6105928,
+      "long": 16.1133233,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Jz Sp\u00e1ra",
+      "rock": "Sokol\u00edk",
+      "sector": "Teplick\u00e9 Sk\u00e1ly",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=22758",
+      "description": "\n<strong>5+</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(UIAA),\r\n\t\t\t\t\t\t\t\t30.\r\n\t\t\t\t\t\t\t6.\r\n\t\t\t\t\t\t\t1956,\r\n\t\t\t\t\t\t\tBohumil S\u00fdkora, Miloslav Stan\u011bk.\r\n\t\t\t\t\t\t\tOd JZ sokol\u00edkovou sp\u00e1rou (2 kruhy) a kom\u00ednkem n.v.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t5b (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=10570\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Miloslav\u00a0Stan\u011bk</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=20798\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Bohumil\u00a0S\u00fdkora</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
+      "grade": "5+",
+      "lat": 50.5888330555556,
+      "long": 16.12575,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Star\u00e1 cesta",
+      "rock": "Vinnetou",
+      "sector": "Adr\u0161pa\u0161sk\u00e9 sk\u00e1ly",
+      "link": "https://www.horosvaz.cz/skaly-cesta-24836/",
+      "description": "Od severu koutovou sp\u00e1rou do meziv\u011b\u017e\u00ed a kom\u00ednem na balkon ke druh\u00e9mu sla\u0148ovac\u00edmu kruhu. St\u011bnou \u0161ikmo doleva ke kruhu (stav\u011bn\u00edm) a st\u011bnou na vrchol. \n Jan Farka\u0161, Z. Klikar, 17.6.1962",
+      "grade": "VI, RP\u00a0VIIa(P\u00edskovec Sasko)",
+      "lat": 50.6140389629769,
+      "long": 16.1207867470044,
+      "user_tags": [
+        "crack"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "Vyhl\u00eddkov\u00e1 Hrana",
+      "rock": "Ottovy V\u011b\u017ee",
+      "sector": "Centr\u00e1ln\u00ed Skal\u00e1k",
+      "link": "http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12552",
+      "description": "\n<strong>VIIb</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<strong>VIIc</strong>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\u00a0RP\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t18.\r\n\t\t\t\t\t\t\t8.\r\n\t\t\t\t\t\t\t1964,\r\n\t\t\t\t\t\t\tMiroslav \u010cern\u00fd st\u0159. Ladislav Mejsnar.\r\n\t\t\t\t\t\t\tOd \"\u00dazk\u00e9 sp\u00e1ry\" traverz doprava k sp\u00e1\u0159e u V hrany (sem t\u00e9\u017e p\u0159\u00edmo p\u0159es p\u0159evis). Vzh\u016fru k 1. kruhu, pod\u00e9l  jemn\u00fdch trhlinek, v\u00fd\u0161e doprava k hran\u011b a pod\u00e9l n\u00ed k 2. kruhu.  P\u0159\u00edmo k 3. kruhu a \u0161ikmo vpravo.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6+/7- (UIAA), VIIc (sask\u00e1), 6a (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=620\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Miroslav\u00a0\u010cern\u00fd</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=8898\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Ladislav\u00a0Mejsnar</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
+      "grade": "VIIb",
+      "lat": 50.5563469444444,
+      "long": 15.1780152777778,
+      "user_tags": [
+        "Wall"
+      ],
+      "user_note": "Vzdu\u0161nej n\u00e1stup nad d\u00edrou, ale pak to asi bude dobr\u00fd"
+    },
+    {
+      "name": "Ji\u017en\u00ed Cesta",
+      "rock": "Prachovsk\u00e1 Jehla",
+      "sector": "Prachovsk\u00e9 Sk\u00e1ly - Centr\u00e1l",
+      "link": "https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=11399",
+      "description": "\n<strong>VIIb</strong>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t(JPK),\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<strong>VIIIb</strong>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\u00a0RP\t\r\n\t\t\t\t\t\t\t\t(P\u00edsk.Sasko),\r\n\t\t\t\t\t\t\t\t7.\r\n\t\t\t\t\t\t\t9.\r\n\t\t\t\t\t\t\t1957,\r\n\t\t\t\t\t\t\tJosef \u010cihula st\u0159. Franti\u0161ek Kroupa.\r\n\t\t\t\t\t\t\tSt\u0159edem ji\u017en\u00ed st\u011bny p\u0159es 3 kruhy na lavici, doleva a na vrchol.\r\n\r\n\t\t\t\t\t\t\t\t<div style=\"text-align: right; width: 100%; color: #aaa; padding-bottom: 5px; padding-top: 5px;\">\t\r\n\t\t\t\t\t\t\t\t6+/7- (UIAA), VIIc (sask\u00e1), 6a (francouzsk\u00e1)\r\n\t\t\t\t\t\t\t</div>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=6109\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Josef\u00a0\u010cihula</a>\n<a class=\"lezec1\" href=\"4_history/5_history_index.asp?history_cmd=7admin&amp;id=8212\" id=\"buttonK\" style=\"color:#000\" target=\"_blank\" title=\"Link na kartu v Galerii lezc\u016f\">Franti\u0161ek\u00a0Kroupa</a>\n<div style=\"height:3px; width: 10px;\"></div>\n",
+      "grade": "VIIb",
+      "lat": 50.4670869444444,
+      "long": 15.2882638888889,
+      "user_tags": [
+        "Wall"
+      ],
+      "user_note": ""
+    },
+    {
+      "name": "V\u00fdchodn\u00ed st\u011bna",
+      "rock": "Obelisk",
+      "sector": "Prachovsk\u00e9 sk\u00e1ly",
+      "link": "https://www.horosvaz.cz/skaly-cesta-84424/",
+      "description": "V\u00fdchodn\u00ed st\u011bnou p\u0159es t\u0159i kruhy n. v. \n Jaroslav Havl\u00edk, J. Brych, J. Ti\u0161er, 5.7.1959",
+      "grade": "VII(P\u00edskovec \u010cR)",
+      "lat": 50.4668055556,
+      "long": 15.2960555556,
+      "user_tags": [
+        "Wall"
+      ],
       "user_note": ""
     }
   ]

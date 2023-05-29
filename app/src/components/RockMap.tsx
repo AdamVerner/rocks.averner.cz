@@ -16,27 +16,26 @@ import {
 const RockMap = () => {
   return (
     <div>
-      <Map center={{ lat: 50.556346, lng: 15.178015 }} height={"100vh"}>
+      <Map zoom={10} center={{ lat: 50.52, lng: 14.9 }} height={"100vh"}>
         <KeyboardControl />
         <ZoomControl />
         <MouseControl zoom={true} pan={true} wheel={true} />
         <CompassControl right={10} top={50} />
         <SyncControl />
         <MarkerLayer>
-          {database.entries.map((e) => (
-            <Marker
-              coords={{ lat: parseFloat(e.lat), lng: parseFloat(e.long) }}
-              card={{
-                header: "{e.grade}<strong>{e.name} - ({e.sector})</strong>",
-                body: e.description,
-                footer: "Card footer",
-                options: {
-                  width: 200,
-                  height: 200,
-                },
-              }}
-            />
-          ))}
+          {database.entries.map((e) => {
+            let head = `<p>${e.grade} - <strong>${e.name} - (${e.rock})</strong></p>`;
+            let body = `<p><a href="${e.link}" target="_blank">Source link</a></p><p>${e.description}</p>`;
+            return (
+              <Marker
+                coords={{ lat: e.lat, lng: e.long }}
+                card={{
+                  header: head,
+                  body: body,
+                }}
+              />
+            );
+          })}
         </MarkerLayer>
       </Map>
     </div>

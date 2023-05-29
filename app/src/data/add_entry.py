@@ -40,18 +40,27 @@ def get_data(link: str) -> str:
 
 @dataclass
 class EntryInformation:
+    # name of the route
     name: str
+
+    # Name of the tower, local-sector, ...
     rock: str
+
+    # general area - e.g. Adr, Skalak, Prachov, Roviste, ...
     sector: str
 
+    link: str
+    # description from the original source
+
     description: str
+    # grade as stated in the source
     grade: str
 
-    link: str
+    # gps coords
+    lat: float
+    long: float
 
-    lat: int
-    long: int
-
+    # user notes
     user_tags: List[str]
     user_note: str
 
@@ -73,19 +82,18 @@ def add_skalnioblasti_entry(cesta_link: str, tags: List[str], note: str):
     mapa_data = get_data(f'https://www.skalnioblasti.cz/{mapa_link}')
 
     match_coords = re.search(r'fromWGS84\((\d+\.\d+), \n?(\d+\.\d+)\);', mapa_data)
-    lat, long = match_coords.group(2), match_coords.group(1)
+    lat, long = float(match_coords.group(2)), float(match_coords.group(1))
 
     match_name = re.search(r'<font style="font-size: 2[20]px;">(.*)<\/font>', cesta_data)
-    name = match_name.group(1)
+    name = match_name.group(1).title()
 
     match_skala_name = re.search(r'<span class="db_nadpis(_\d)?">(.*)<\/span>', skala_data)
-    skala_name = match_skala_name.group(2)
+    skala_name = match_skala_name.group(2).title()
 
     match_sector_name = re.search(
-        r'<a href="5_index\.asp\?cmd=6&sektor_id=\d+(&var=ps)?" class=lezec1>(?!<|sektor)(.*)</a>',
-        skala_data
+        r'<a href="5_index\.asp\?cmd=6&sektor_id=\d+(&var=ps)?" class=lezec1>(?!<|sektor)(.*)</a>', skala_data
     )
-    sector_name = match_sector_name.group(2)
+    sector_name = match_sector_name.group(2).title()
 
     # parsing description is slightly more shitty...
     soup = BeautifulSoup(cesta_data, 'html.parser')
@@ -97,20 +105,69 @@ def add_skalnioblasti_entry(cesta_link: str, tags: List[str], note: str):
     match_grade = re.search(r'<strong>(.*)<\/strong>', cesta_data)
     grade = match_grade.group(1)
 
-    print(f'{name} ({skala_name})', lat, long)
+    return EntryInformation(
+        name=name,
+        rock=skala_name,
+        sector=sector_name,
+        link=cesta_link,
+        lat=lat,
+        long=long,
+        description=description,
+        grade=grade,
+        user_note=note,
+        user_tags=tags,
+    )
+
+
+def add_horosvaz_entry(cesta_link: str, tags: List[str], note: str) -> EntryInformation:
+    cesta_data = get_data(cesta_link)
+    cesta_soup = BeautifulSoup(cesta_data, 'html.parser')
+
+    grade = cesta_soup.find(attrs={'class': 'classification'}).get_text()
+    name = cesta_soup.find(attrs={'class': 'menu5 small-h1'}).get_text().replace(grade, '')
+    grade = grade.replace('\xa0|\xa0', '')
+    rock_name = cesta_soup.find(attrs={'class': 'skaly-parent'}).get_text()
+    sector_name = (
+        cesta_soup.find(attrs={'class': 'breadcrumb'})
+        .find_all(attrs={'class': 'path-item path-item-page'})[2]
+        .get_text()
+    )
+
+    authors = cesta_soup.find(attrs={'class': 'mountains-text'}).find('strong').get_text()
+    description = cesta_soup.find(attrs={'class': 'mountains-text'}).get_text().replace(authors, '')
+    description = f'{description} \n {authors}'
+
+    mapa_link = f"https://www.horosvaz.cz{cesta_soup.find(attrs={'class': 'map'}).get('href')}"
+    mapa_data = get_data(mapa_link)
+
+    match_coords = re.search(r'lat":(\d+\.\d+),"lng":(\d+\.\d+),".*type=skala', mapa_data)
+    lat, long = float(match_coords.group(1)), float(match_coords.group(2))
+
+    # rock_link = f"https://www.horosvaz.cz{cesta_soup.find(attrs={'class': 'skaly-parent'}).get('href')}"
 
     return EntryInformation(
-        name=name, rock=skala_name, sector=sector_name, link=cesta_link, lat=lat, long=long, description=description,
+        name=name,
+        rock=rock_name,
+        sector=sector_name,
+        link=cesta_link,
+        lat=lat,
+        long=long,
+        description=description,
         grade=grade,
-        user_note=note, user_tags=tags
+        user_note=note,
+        user_tags=tags,
     )
 
 
 def add_entry(link: str, tags: List[str], note: str):
     if 'www.skalnioblasti.cz' in link:
         entry = add_skalnioblasti_entry(link, tags, note)
+    elif 'www.horosvaz.cz' in link:
+        entry = add_horosvaz_entry(link, tags, note)
     else:
         raise NotImplementedError()
+
+    print(f'{entry.name} ({entry.rock})', entry.lat, entry.long)
 
     db.setdefault('entries', [])
     if not len(list(filter(lambda x: x.get('link', None) == link, db['entries']))):
@@ -130,8 +187,35 @@ add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=10975', ['crac
 add_entry('https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=20401', ['crack'], note='')
 add_entry('https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=20411', ['crack'], note='')
 add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=59874', ['crack'], note='')
-# add_entry('', ['crack'], note='')
-
+add_entry('https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=22617', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-21127/', ['offwidth'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-36584/', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-32059/', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-35113/', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-38927/', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-59462/', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-38936/', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-11053/', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-40798/', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-38935/', ['wall'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-25837/', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-24737/', ['crack'], note='')
+add_entry('https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=23345', ['crack'], note='')
+add_entry('https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=23346', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=23121', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-21456/', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=23058', ['crack'], note='')
+add_entry('https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=75778', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=75795', ['crack'], note='')
+add_entry('http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=22758', ['crack'], note='')
+add_entry('https://www.horosvaz.cz/skaly-cesta-24836/', ['crack'], note='')
+add_entry(
+    'http://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=12552',
+    ['Wall'],
+    note='Vzdušnej nástup nad dírou, ale pak to asi bude dobrý',
+)
+add_entry('https://www.skalnioblasti.cz/5_index.asp?cmd=6&cesta_id=11399', ['Wall'], '')
+add_entry('https://www.horosvaz.cz/skaly-cesta-84424/', ['Wall'], '')
 with open('database.json', 'w') as database:
     json.dump(db, database, indent=2)
 
